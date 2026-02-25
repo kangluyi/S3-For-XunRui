@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/docs/getting-started/</loc>
+    <loc>https://s3-for-xun-rui.vercel.app/docs/getting-started/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://s3-for-xun-rui.vercel.app/categories/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://s3-for-xun-rui.vercel.app/tags/</loc>
   </url><url>
-    <loc>https://example.org/about/</loc>
+    <loc>https://s3-for-xun-rui.vercel.app/about/</loc>
   </url><url>
-    <loc>https://example.org/docs/</loc>
+    <loc>https://s3-for-xun-rui.vercel.app/docs/</loc>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://s3-for-xun-rui.vercel.app/</loc>
   </url>
 </urlset>
