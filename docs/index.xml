@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>文档 on 我的产品展示站</title>
-    <link>https://s3-for-xun-rui.vercel.app/docs/</link>
-    <description>Recent content in 文档 on 我的产品展示站</description>
+    <title>存储 on S3 For XunRuiCMS 文档</title>
+    <link>http://localhost:8465/docs/</link>
+    <description>Recent content in 存储 on S3 For XunRuiCMS 文档</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <managingEditor>author@example.com (作者)</managingEditor>
-    <webMaster>author@example.com (作者)</webMaster>
-    <atom:link href="https://s3-for-xun-rui.vercel.app/docs/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>me@moruteaven.com (抹露茶柒)</managingEditor>
+    <webMaster>me@moruteaven.com (抹露茶柒)</webMaster>
+    <atom:link href="http://localhost:8465/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>快速开始</title>
-      <link>https://s3-for-xun-rui.vercel.app/docs/getting-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>author@example.com (作者)</author>
-      <guid>https://s3-for-xun-rui.vercel.app/docs/getting-started/</guid>
-      <description>&lt;h1 id=&#34;快速开始&#34;&gt;快速开始&lt;a class=&#34;anchor&#34; href=&#34;#%e5%bf%ab%e9%80%9f%e5%bc%80%e5%a7%8b&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;本文档将帮助你快速上手使用本站。&lt;/p&gt;&#xA;&lt;h2 id=&#34;什么是本站&#34;&gt;什么是本站&lt;a class=&#34;anchor&#34; href=&#34;#%e4%bb%80%e4%b9%88%e6%98%af%e6%9c%ac%e7%ab%99&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;本站是一个使用 Hugo 搭建的文档站，旨在提供详细的文档和指南。&lt;/p&gt;&#xA;&lt;h2 id=&#34;如何使用&#34;&gt;如何使用&lt;a class=&#34;anchor&#34; href=&#34;#%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;浏览导航菜单找到你需要的文档&lt;/li&gt;&#xA;&lt;li&gt;使用搜索功能快速定位内容&lt;/li&gt;&#xA;&lt;li&gt;阅读文档并按照指南操作&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;a class=&#34;anchor&#34; href=&#34;#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;h3 id=&#34;如何贡献文档&#34;&gt;如何贡献文档？&lt;a class=&#34;anchor&#34; href=&#34;#%e5%a6%82%e4%bd%95%e8%b4%a1%e7%8c%ae%e6%96%87%e6%a1%a3&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;如果你想贡献文档，请联系我们的团队。&lt;/p&gt;&#xA;&lt;h3 id=&#34;文档更新频率&#34;&gt;文档更新频率？&lt;a class=&#34;anchor&#34; href=&#34;#%e6%96%87%e6%a1%a3%e6%9b%b4%e6%96%b0%e9%a2%91%e7%8e%87&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;我们会定期更新文档，确保内容的准确性和完整性。&lt;/p&gt;</description>
+      <title>Cloudflare R2</title>
+      <link>http://localhost:8465/docs/cloudflare-r2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>me@moruteaven.com (抹露茶柒)</author>
+      <guid>http://localhost:8465/docs/cloudflare-r2/</guid>
+      <description>&lt;h2 id=&#34;配置信息&#34;&gt;配置信息&lt;a class=&#34;anchor&#34; href=&#34;#%e9%85%8d%e7%bd%ae%e4%bf%a1%e6%81%af&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;首先去 [Cloudflare R2](&lt;a href=&#34;https://link.guoctang.com/?target=https://www.cloudflare.com/developer-platform/products/r2/&#34;&gt;https://link.guoctang.com/?target=https://www.cloudflare.com/developer-platform/products/r2/&lt;/a&gt; &amp;quot;Cloudflare&amp;quot;) 创建一个存储桶&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;填写 Access Key 和 Secret Key&#xA;&lt;img src=&#34;https://img1.chenyande.cn/img/2025/06/13/f926f14022fb4fd31cc1093beadce4ec.webp&#34; alt=&#34;Cloudflare R2 配置信息&#34; /&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Region&lt;/code&gt; 填写 &lt;code&gt;位置&lt;/code&gt;括号里的英文部分&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Bucket&lt;/code&gt; 填写 创建存储桶时填写的&lt;code&gt;存储桶名称&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Endpoint&lt;/code&gt; 填写 &lt;code&gt;S3 API&lt;/code&gt;并去掉结尾的存储桶名称&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;存储路径&lt;/code&gt; 填写文件的存储位置（默认为根目录）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>
