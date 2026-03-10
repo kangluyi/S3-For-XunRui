@@ -2,17 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>款速开始 on S3 For XunRuiCMS 文档</title>
-    <link>http://localhost:2437/</link>
+    <link>http://localhost:6290/</link>
     <description>Recent content in 款速开始 on S3 For XunRuiCMS 文档</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="http://localhost:2437/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>me@moruteaven.com (抹露茶柒)</managingEditor>
+    <webMaster>me@moruteaven.com (抹露茶柒)</webMaster>
+    <atom:link href="http://localhost:6290/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloudflare R2</title>
-      <link>http://localhost:2437/docs/storage/cloudflare-r2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:2437/docs/storage/cloudflare-r2/</guid>
-      <description>&lt;h2 id=&#34;配置信息&#34;&gt;配置信息&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;首先去 [Cloudflare R2](&lt;a href=&#34;https://link.guoctang.com/?target=https://www.cloudflare.com/developer-platform/products/r2/&#34;&gt;https://link.guoctang.com/?target=https://www.cloudflare.com/developer-platform/products/r2/&lt;/a&gt; &amp;quot;Cloudflare&amp;quot;) 创建一个存储桶&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;填写 Access Key 和 Secret Key&#xA;&lt;img src=&#34;https://img1.chenyande.cn/img/2025/06/13/f926f14022fb4fd31cc1093beadce4ec.webp&#34; alt=&#34;Cloudflare R2 配置信息&#34;&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Region&lt;/code&gt; 填写 &lt;code&gt;位置&lt;/code&gt;括号里的英文部分&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Bucket&lt;/code&gt; 填写 创建存储桶时填写的&lt;code&gt;存储桶名称&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Endpoint&lt;/code&gt; 填写 &lt;code&gt;S3 API&lt;/code&gt;并去掉结尾的存储桶名称&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;存储路径&lt;/code&gt; 填写文件的存储位置（默认为根目录）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <link>http://localhost:6290/docs/storage/cloudflare-r2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>me@moruteaven.com (抹露茶柒)</author>
+      <guid>http://localhost:6290/docs/storage/cloudflare-r2/</guid>
+      <description>&lt;h2 id=&#34;配置信息&#34;&gt;配置信息&lt;a class=&#34;anchor&#34; href=&#34;#%e9%85%8d%e7%bd%ae%e4%bf%a1%e6%81%af&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;首先去 [Cloudflare R2](&lt;a href=&#34;https://link.guoctang.com/?target=https://www.cloudflare.com/developer-platform/products/r2/&#34;&gt;https://link.guoctang.com/?target=https://www.cloudflare.com/developer-platform/products/r2/&lt;/a&gt; &amp;quot;Cloudflare&amp;quot;) 创建一个存储桶&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;填写 Access Key 和 Secret Key&#xA;&lt;img src=&#34;https://img1.chenyande.cn/img/2025/06/13/f926f14022fb4fd31cc1093beadce4ec.webp&#34; alt=&#34;Cloudflare R2 配置信息&#34; /&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Region&lt;/code&gt; 填写 &lt;code&gt;位置&lt;/code&gt;括号里的英文部分&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Bucket&lt;/code&gt; 填写 创建存储桶时填写的&lt;code&gt;存储桶名称&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;Endpoint&lt;/code&gt; 填写 &lt;code&gt;S3 API&lt;/code&gt;并去掉结尾的存储桶名称&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;存储路径&lt;/code&gt; 填写文件的存储位置（默认为根目录）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>
