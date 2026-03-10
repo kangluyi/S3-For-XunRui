@@ -2,12 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>关于 on S3 For XunRuiCMS 文档</title>
-    <link>http://localhost:1313/about/</link>
+    <link>http://localhost:2437/about/</link>
     <description>Recent content in 关于 on S3 For XunRuiCMS 文档</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <managingEditor>me@moruteaven.com (抹露茶柒)</managingEditor>
-    <webMaster>me@moruteaven.com (抹露茶柒)</webMaster>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:2437/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
