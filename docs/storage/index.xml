@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>款速开始 on S3 For XunRuiCMS 文档</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in 款速开始 on S3 For XunRuiCMS 文档</description>
+    <title>存储 on S3 For XunRuiCMS 文档</title>
+    <link>http://localhost:1313/docs/storage/</link>
+    <description>Recent content in 存储 on S3 For XunRuiCMS 文档</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <managingEditor>me@moruteaven.com (抹露茶柒)</managingEditor>
     <webMaster>me@moruteaven.com (抹露茶柒)</webMaster>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/storage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloudflare R2</title>
       <link>http://localhost:1313/docs/storage/cloudflare-r2/</link>
