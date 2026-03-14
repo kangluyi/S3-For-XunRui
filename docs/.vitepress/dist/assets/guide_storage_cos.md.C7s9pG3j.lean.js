@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o}from"./chunks/framework.FSADoC4m.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/storage/cos.md","filePath":"guide/storage/cos.md"}'),a={name:"guide/storage/cos.md"};function s(r,c,n,d,i,p){return t(),o("div")}const f=e(a,[["render",s]]);export{m as __pageData,f as default};

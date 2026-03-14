@@ -31,17 +31,15 @@ export default {
         {
           text: '指南',
           items: [
-            { text: '介绍', link: '/guide/' },
-            { text: '存储', link: '/guide/storage/' },
-            { text: '阿里云 OSS', link: '/guide/storage/oss' },
-            { text: '腾讯云 COS', link: '/guide/storage/cos' }
+            { text: '开始', link: '/guide/' },
           ]
         },
         {
-          text: '进阶',
+          text: '存储',
           items: [
-            { text: 'API集成', link: '/guide/integration' },
-            { text: '最佳实践', link: '/guide/best-practices' }
+            { text: '介绍', link: '/guide/storage/' },
+            { text: '阿里云 OSS', link: '/guide/storage/oss' },
+            { text: '腾讯云 COS', link: '/guide/storage/cos' }
           ]
         }
       ]
