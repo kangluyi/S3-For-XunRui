@@ -4,6 +4,9 @@
     <div class="hero">
       <div class="hero-inner">
         <div class="hero-left">
+          <div class="hero-logo">
+            <img src="/logo.png" alt="S3 For XunRuiCMS" width="80" height="80">
+          </div>
           <div class="en-dot"># 原生 S3 集成</div>
           <div class="hero-title">
             S3 <span>FOR XUNRUICMS</span>
@@ -302,6 +305,16 @@ html:not(.dark) {
 .hero-left {
   max-width: 900px;
   margin-bottom: 2rem;
+}
+
+.hero-logo {
+  margin-bottom: 1.5rem;
+}
+
+.hero-logo img {
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero-right {
