@@ -1,656 +1,576 @@
 <template>
-  <div class="home-container">
-
-    <!-- 主视觉 -->
-    <section class="hero">
-      <h1>挨批IP查询</h1>
-
-      <p class="hero-subtitle">
-        专业IP查询插件 · 支持 <span class="highlight">多数据源集成</span> · 精准定位<br>
-        <span style="font-size: 0.9em; opacity: 0.7;">Flexible IP Geolocation Plugins with Multiple Data Sources</span>
-      </p>
-
-      <!--div class="search-container">
-        <div class="search-box">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="输入 IP 地址 (例如: 8.8.8.8) 或域名..." id="ipInput">
-          <button class="search-btn" @click="searchIP">
-            <i class="fa-solid fa-bolt" style="margin-right: 0.5rem;"></i>查询
-          </button>
-        </div>
-      </div-->
-    </section>
-
-    <!-- 功能特性 -->
-    <section class="features" id="features">
-      <div class="section-header">
-        <span class="en-subtitle">Core Features</span>
-        <h2>插件核心优势</h2>
-      </div>
-
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fa-solid fa-globe"></i>
+  <div class="home">
+    <!-- HERO 超大视觉 -->
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="en-dot"># 原生 S3 集成</div>
+          <div class="hero-title">
+            S3 <span>FOR XUNRUICMS</span>
           </div>
-          <span class="en-name">Dual Stack</span>
-          <h3>IPv4 & IPv6 双栈</h3>
-          <p>完整支持 IPv4 和 IPv6 地址查询，自动识别协议版本。覆盖全球 250万+ 城市位置数据。</p>
-          <div class="feature-meta">
-            <span><i class="fa-solid fa-network-wired"></i> 双栈支持</span>
-            <span><i class="fa-solid fa-map-location-dot"></i> 250万+ 城市</span>
+          <div class="contrast-group">
+            <span class="big">100%</span>
+            <span class="small">兼容 S3 协议</span>
+            <span style="width: 2rem"></span>
+            <span class="big">∞</span>
+            <span class="small">可扩展存储</span>
           </div>
         </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fa-solid fa-laptop"></i>
-          </div>
-          <span class="en-name">Multi-Platform</span>
-          <h3>多平台支持</h3>
-          <p>支持 WordPress、Shopify、Discord 等多种平台。提供统一的用户体验，无需担心平台差异。</p>
-          <div class="feature-meta">
-            <span><i class="fa-solid fa-wpforms"></i> WordPress</span>
-            <span><i class="fa-solid fa-shopping-cart"></i> Shopify</span>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fa-solid fa-database"></i>
-          </div>
-          <span class="en-name">Multiple Data Sources</span>
-          <h3>多数据源支持</h3>
-          <p>不自带数据，支持集成百度、高德等众多数据源。灵活切换数据源，满足不同场景的需求。</p>
-          <div class="feature-meta">
-            <span><i class="fa-solid fa-globe-asia"></i> 百度地图</span>
-            <span><i class="fa-solid fa-map-marked-alt"></i> 高德地图</span>
+        <div class="hero-right">
+          <div class="line-graphic hero-line-graphic">
+            <div class="bar-outline"></div>
+            <div class="bar"></div>
+            <div class="bar-outline"></div>
+            <div class="bar"></div>
+            <div class="bar-outline-small"></div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- 插件集成演示 -->
-    <section class="plugin-demo" id="integration">
-      <div class="demo-container">
-        <div class="demo-content">
-          <span class="en-caption">Simple Integration</span>
-          <h2>插件集成<br>三步即可完成</h2>
-          <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-            无需复杂的配置，通过简单的插件安装即可在您的应用或网站中集成 IP 查询功能。
-            支持百度、高德等众多数据源，灵活切换，满足不同场景的需求。
-          </p>
-          <div style="margin-top: 2rem; display: flex; gap: 1rem;">
-            <a href="#" style="padding: 0.875rem 1.5rem; background: var(--primary-red); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-              <i class="fa-solid fa-download" style="margin-right: 0.5rem;"></i>下载插件
-            </a>
-            <a href="#" style="padding: 0.875rem 1.5rem; border: 1px solid var(--border-red); color: var(--text-primary); text-decoration: none; border-radius: 8px; font-weight: 600;">
-              <i class="fa-solid fa-book" style="margin-right: 0.5rem;"></i>使用文档
-            </a>
-          </div>
+      <!-- 红色单色透明渐变区块 新色#dc5945 -->
+      <div class="hero-extra-line red-trans-block">
+        <div class="hero-stats">
+          <div><span class="stat-big">99.9%</span> <span class="en-micro">可用性</span></div>
+          <div><span class="stat-big">< 1ms</span> <span class="en-micro">插件处理延迟</span></div>
         </div>
+      </div>
+    </div>
 
-        <div class="code-block">
-          <div class="code-content">
-            <span style="color: #666;">// WordPress 插件安装示例</span>
-            <span class="code-keyword">1.</span> 登录 WordPress 后台
-            <span class="code-keyword">2.</span> 插件 → 添加新插件
-            <span class="code-keyword">3.</span> 搜索 "IP Search"
-            <span class="code-keyword">4.</span> 点击 "安装" 并激活
-
-            <span style="color: #666;">// 配置数据源</span>
-            <span class="code-keyword">1.</span> 进入 IP Search 插件设置
-            <span class="code-keyword">2.</span> 选择数据源 (百度/高德等)
-            <span class="code-keyword">3.</span> 配置数据源 API 密钥
-            <span class="code-keyword">4.</span> 保存设置并开始使用
+    <!-- 3大功能卡片 (完整内容) -->
+    <div class="grid-3">
+      <div class="card-modern">
+        <div class="feature-icon"><i class="fas fa-boxes"></i></div>
+        <div class="feature-title">原生S3兼容</div>
+        <div class="feature-desc">无缝对接阿里云、腾讯云、MinIO等主流对象存储，配置即用。同时支持Path-Style和Virtual-Hosted风格。</div>
+        <div class="mini-line-group">
+          <span class="stat-number aws-logo">AWS</span>
+          <div class="line-graphic mini-line-graphic">
+            <div class="bar mini-bar"></div>
+            <div class="bar-outline mini-bar-outline"></div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- 插件优势展示 - 卡片式 -->
-    <section class="data-showcase" id="data">
-      <div class="section-header">
-        <span class="en-subtitle">Plugin Advantages</span>
-        <h2>插件优势</h2>
+      <div class="card-modern">
+        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="feature-title">性能可视化</div>
+        <div class="feature-desc">内置实时监控面板，传输速率、请求次数、错误率一目了然。勾线风格图表实时反馈。</div>
+        <div class="chart-container">
+          <div class="chart-bars">
+            <div class="chart-bar chart-bar-1"></div>
+            <div class="chart-bar chart-bar-2"></div>
+            <div class="chart-bar chart-bar-3"></div>
+            <div class="chart-bar chart-bar-4"></div>
+            <div class="chart-bar chart-bar-5"></div>
+          </div>
+        </div>
+        <span class="en-micro chart-label">实时吞吐量 (MB/s)</span>
       </div>
-
-      <div class="data-cards">
-        <div class="data-card">
-          <div class="data-icon">
-            <i class="fa-solid fa-globe"></i>
-          </div>
-          <div class="data-info">
-            <h4>全球覆盖</h4>
-            <span class="data-en">Global Coverage</span>
-            <div class="data-value">200+ <small style="font-size: 0.5em; color: var(--text-secondary);">国家地区</small></div>
-          </div>
-        </div>
-
-        <div class="data-card">
-          <div class="data-icon">
-            <i class="fa-solid fa-laptop-code"></i>
-          </div>
-          <div class="data-info">
-            <h4>多平台支持</h4>
-            <span class="data-en">Multi-Platform</span>
-            <div class="data-value">10+ <small style="font-size: 0.5em; color: var(--text-secondary);">支持平台</small></div>
-          </div>
-        </div>
-
-        <div class="data-card">
-          <div class="data-icon">
-            <i class="fa-solid fa-database"></i>
-          </div>
-          <div class="data-info">
-            <h4>多数据源支持</h4>
-            <span class="data-en">Multiple Data Sources</span>
-            <div class="data-value">10+ <small style="font-size: 0.5em; color: var(--text-secondary);">数据源</small></div>
-          </div>
+      <div class="card-modern">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="feature-title">企业级安全</div>
+        <div class="feature-desc">IAM 角色集成，临时凭证，签名v4 完全支持。传输中加密 + 静态加密，满足等保合规。</div>
+        <div class="contrast-group security-contrast">
+          <span class="big aes-label">AES-256</span>
+          <span class="small">加密标准</span>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- 兼容性与生态 (完整要点) -->
+    <div class="compatibility-section">
+      <div class="en-dot">🔌 全生态兼容 · 即插即用</div>
+      <div class="grid-2 compatibility-grid">
+        <div class="card-modern">
+          <ul class="compatibility-list">
+            <li><i class="fas fa-check-circle"></i> 阿里云OSS (北京/上海/深圳等)</li>
+            <li><i class="fas fa-check-circle"></i> 腾讯云COS (金融云/公有云)</li>
+            <li><i class="fas fa-check-circle"></i> 华为云OBS、百度云BOS</li>
+            <li><i class="fas fa-check-circle"></i> MinIO / Ceph RADOS (自建私有云)</li>
+            <li><i class="fas fa-check-circle"></i> 亚马逊S3、Backblaze B2</li>
+            <li><i class="fas fa-check-circle"></i> 七牛云Kodo、又拍云</li>
+          </ul>
+        </div>
+        <div class="card-modern">
+          <div class="cms-info">
+            <span class="cms-name">XunRuiCMS</span>
+            <span class="cms-version">v6.x / v7.x 全系</span>
+          </div>
+          <p class="cms-description">原生字段集成，无需修改模板，后台直接选择S3桶。支持附件、图片、视频分发。</p>
+          <div class="license-info">
+            <i class="fas fa-code-branch"></i> 开源协议: Apache 2.0 / MIT <br>
+            <span class="en-micro">立即体验 · 完全免费</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 发布/行动号召 -->
+    <hr>
+    <div class="cta-section">
+      <div>
+        <div class="en-dot">🚀 正式发布</div>
+        <span class="hero-title">S3 FOR XUNRUICMS</span>
+        <span class="cta-subtitle">现已开放下载 · 生产就绪</span>
+      </div>
+      <div class="release-tag">
+        <i class="fas fa-download"></i> 立即获取
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
-
-const searchIP = () => {
-  const input = document.getElementById('ipInput')
-  const btn = document.querySelector('.search-btn')
-
-  if (!input.value) {
-    input.style.borderColor = 'var(--primary-red)'
-    input.placeholder = '请输入有效的 IP 地址...'
-    return
-  }
-
-  btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin" style="margin-right: 0.5rem;"></i>查询中...'
-
-  setTimeout(() => {
-    btn.innerHTML = '<i class="fa-solid fa-check" style="margin-right: 0.5rem;"></i>已发送'
-    btn.style.background = '#22C55E'
-
-    setTimeout(() => {
-      btn.innerHTML = '<i class="fa-solid fa-bolt" style="margin-right: 0.5rem;"></i>查询'
-      btn.style.background = ''
-    }, 2000)
-  }, 800)
-}
-
-onMounted(() => {
-  document.getElementById('ipInput').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      searchIP()
-    }
-  })
-})
+// Home component for VitePress
 </script>
 
-<style scoped>
-/* 开源 REMIX ICON (MIT 协议)，使用国内 CDN 加速 */
-@import url('https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/all.min.css');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+<style>
 :root {
-  --primary-red: #DC2626;
-  --deep-red: #991B1B;
-  --light-red: #FEE2E2;
-  --accent-red: #EF4444;
-  --dark-bg: #0A0A0A;
-  --card-bg: rgba(220, 38, 38, 0.05);
-  --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.6);
-  --border-red: rgba(220, 38, 38, 0.3);
+  --red-primary: #dc5945;
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/inter/3.19.3/inter-vietnamese-400-normal.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
+html.dark {
+  --text-primary: #ffffff;
+  --text-secondary: #cfa9a9;
+  --card-bg: rgba(30, 15, 15, 0.75);
+  --card-shadow: 0 25px 40px -15px rgba(0,0,0,0.8);
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/inter/3.19.3/inter-vietnamese-700-normal.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
+html:not(.dark) {
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-shadow: 0 25px 40px -15px rgba(0,0,0,0.1);
 }
+</style>
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  background-color: var(--dark-bg);
+<style scoped>
+.home {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
   color: var(--text-primary);
-  line-height: 1.6;
-  overflow-x: hidden;
 }
 
-
-
-/* 主视觉区域 - 超大字体 */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 8rem 5% 4rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle, rgba(220, 38, 38, 0.15) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -30%;
-  left: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(239, 68, 68, 0.1) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1.25rem;
-  background: rgba(220, 38, 38, 0.1);
-  border: 1px solid var(--border-red);
-  border-radius: 50px;
-  font-size: 0.85rem;
-  color: var(--accent-red);
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.hero h1 {
-  font-size: clamp(4rem, 12vw, 10rem);
+.hero-title {
+  font-size: clamp(4rem, 15vw, 8rem);
   font-weight: 900;
   line-height: 0.9;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #FFFFFF 0%, rgba(220, 38, 38, 0.8) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   letter-spacing: -0.02em;
-}
-
-.hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: var(--text-secondary);
-  text-align: center;
-  max-width: 600px;
-  margin-bottom: 3rem;
-  font-weight: 400;
-}
-
-.hero-subtitle .highlight {
-  color: var(--primary-red);
-  font-weight: 600;
-}
-
-/* 搜索框 - 超大视觉元素 */
-.search-container {
-  width: 100%;
-  max-width: 800px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--red-primary);
+  text-stroke: 2px var(--red-primary);
+  margin-bottom: 0.5rem;
   position: relative;
-  z-index: 10;
+  z-index: 3;
 }
 
-.search-box {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.03);
-  border: 2px solid var(--border-red);
-  border-radius: 16px;
-  padding: 1.5rem 2rem;
-  transition: all 0.3s;
-  backdrop-filter: blur(10px);
-}
-
-.search-box:focus-within {
-  border-color: var(--primary-red);
-  box-shadow: 0 0 40px rgba(220, 38, 38, 0.2);
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.search-box i {
-  font-size: 1.5rem;
-  color: var(--primary-red);
-  margin-right: 1rem;
-}
-
-.search-box input {
-  flex: 1;
-  background: none;
-  border: none;
+.hero-title span {
+  -webkit-text-stroke: 0;
   color: var(--text-primary);
-  font-size: 1.25rem;
-  outline: none;
-  font-family: inherit;
+  font-size: 0.45em;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 0.3rem;
 }
 
-.search-box input::placeholder {
+.en-dot {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
   color: var(--text-secondary);
+  display: inline-block;
+  border-left: 3px solid var(--red-primary);
+  padding-left: 1rem;
+  margin: 2rem 0 1rem;
 }
 
-.search-btn {
-  padding: 0.75rem 2rem;
-  background: var(--primary-red);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.en-micro {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
-.search-btn:hover {
-  background: var(--deep-red);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
-}
-
-/* 功能特性区域 */
-.features {
-  padding: 8rem 5%;
-  position: relative;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 5rem;
-}
-
-.section-header h2 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-  letter-spacing: -0.02em;
-}
-
-.section-header .en-subtitle {
-  font-size: 0.875rem;
-  color: var(--primary-red);
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 600;
-}
-
-/* 卡片网格 - 不使用表格 */
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.feature-card {
+.card-modern {
   background: var(--card-bg);
-  border: 1px solid var(--border-red);
-  border-radius: 20px;
-  padding: 2.5rem;
-  transition: all 0.4s;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(220, 89, 69, 0.3);
+  border-radius: 32px;
+  padding: 2.5rem 2rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, border-color 0.2s;
+  margin-bottom: 2rem;
+}
+
+.card-modern:hover {
+  border-color: var(--red-primary);
+  transform: translateY(-4px);
+}
+
+.line-graphic {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 80px;
+  margin: 2rem 0;
+}
+
+.hero-line-graphic {
+  justify-content: flex-end;
+  height: 250px;
+}
+
+.hero-line-graphic .bar-outline {
+  height: 120px;
+}
+
+.hero-line-graphic .bar {
+  height: 180px;
+}
+
+.hero-line-graphic .bar-outline-small {
+  height: 90px;
+}
+
+.line-graphic .bar {
+  width: 16px;
+  background: var(--red-primary);
+  height: calc(100% - 20px);
+  align-self: flex-end;
+  opacity: 0.9;
+  border-radius: 2px 2px 0 0;
+}
+
+.line-graphic .bar-outline {
+  background: transparent;
+  border: 2px solid var(--red-primary);
+  height: 100%;
+  width: 16px;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+.line-graphic .bar-outline-small {
+  background: transparent;
+  border: 2px solid var(--red-primary);
+  height: 45px;
+  width: 10px;
+}
+
+.stat-number {
+  font-size: 5.2rem;
+  font-weight: 900;
+  line-height: 0.9;
+  color: var(--red-primary);
+  letter-spacing: -2px;
+  margin-bottom: 0.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  overflow: hidden;
+  margin-bottom: 6rem;
 }
 
-.feature-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary-red), transparent);
-  opacity: 0;
-  transition: opacity 0.3s;
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 5;
+  position: relative;
+  margin-bottom: 3rem;
 }
 
-.feature-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(220, 38, 38, 0.6);
-  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.1);
+.hero-left {
+  max-width: 900px;
+  margin-bottom: 2rem;
 }
 
-.feature-card:hover::before {
-  opacity: 1;
+.hero-right {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.hero-extra-line {
+  margin-top: 3rem;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .feature-icon {
-  width: 60px;
-  height: 60px;
-  background: rgba(220, 38, 38, 0.1);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  color: var(--primary-red);
-  border: 1px solid var(--border-red);
+  font-size: 2.6rem;
+  color: var(--red-primary);
+  margin-bottom: 2rem;
 }
 
-.feature-card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-}
-
-.feature-card .en-name {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.feature-card p {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-.feature-meta {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  font-size: 0.875rem;
-  color: var(--accent-red);
-}
-
-.feature-meta span {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-/* 插件集成演示区域 */
-.plugin-demo {
-  padding: 6rem 5%;
-  background: linear-gradient(180deg, transparent 0%, rgba(220, 38, 38, 0.03) 50%, transparent 100%);
-}
-
-.demo-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.demo-content h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+.feature-title {
+  font-size: 2rem;
   font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.feature-desc {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  border-left: 2px solid var(--red-primary);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mini-line-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2rem;
+}
+
+.contrast-group {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.contrast-group .big {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--red-primary);
+}
+
+.contrast-group .small {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.compatibility-list {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.compatibility-list li {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-primary);
+}
+
+.compatibility-list i {
+  color: var(--red-primary);
+  width: 28px;
+  font-size: 1.3rem;
+}
+
+hr {
+  border: 1px solid rgba(220, 89, 69, 0.2);
+  margin: 4rem 0;
+}
+
+.release-tag {
+  background: var(--red-primary);
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0 0 20px rgba(220, 89, 69, 0.5);
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.red-trans-block {
+  background: linear-gradient(120deg, rgba(220, 89, 69, 0.35) 0%, rgba(220, 89, 69, 0) 80%);
+  padding: 2rem 2.5rem;
+  border-radius: 60px 20px 20px 60px;
+  margin-top: 2rem;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.stat-big {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.aws-logo {
+  font-size: 2.5rem;
+}
+
+.mini-line-graphic {
+  height: 40px;
+  margin: 0;
+  gap: 4px;
+}
+
+.mini-bar {
+  height: 30px;
+  width: 8px;
+}
+
+.mini-bar-outline {
+  height: 40px;
+  width: 8px;
+}
+
+.chart-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 2rem;
+}
+
+.chart-container > div {
+  width: 100%;
+}
+
+.chart-bars {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  height: 70px;
+}
+
+.chart-bar {
+  width: 100%;
+  background: var(--red-primary);
+}
+
+.chart-bar-1 {
+  height: 40px;
+  opacity: 0.8;
+}
+
+.chart-bar-2 {
+  height: 70px;
+}
+
+.chart-bar-3 {
+  height: 25px;
+  opacity: 0.5;
+}
+
+.chart-bar-4 {
+  height: 55px;
+  background: transparent;
+  border: 2px solid var(--red-primary);
+}
+
+.chart-bar-5 {
+  height: 65px;
+}
+
+.chart-label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.security-contrast {
+  margin-top: 2rem;
+}
+
+.aes-label {
+  font-size: 2.8rem;
+}
+
+.compatibility-section {
+  margin: 5rem 0;
+}
+
+.compatibility-grid {
+  gap: 1.8rem;
+}
+
+.cms-info {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.demo-content .en-caption {
-  font-size: 0.8rem;
-  color: var(--primary-red);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-bottom: 1rem;
-  display: block;
+.cms-name {
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
-.code-block {
-  background: #111;
-  border: 1px solid var(--border-red);
-  border-radius: 12px;
-  padding: 1.5rem;
-  font-family: 'Courier New', monospace;
-  font-size: 0.9rem;
-  overflow-x: auto;
-  position: relative;
+.cms-version {
+  color: var(--red-primary);
+  font-size: 1rem;
 }
 
-.code-block::before {
-  content: 'curl';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.5rem 1rem;
-  background: var(--primary-red);
-  color: white;
-  font-size: 0.75rem;
-  border-bottom-left-radius: 8px;
-  font-family: inherit;
+.cms-description {
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
 }
 
-.code-content {
-  color: #E5E5E5;
-  line-height: 1.8;
+.license-info {
+  border-left: 3px solid var(--red-primary);
+  padding-left: 1rem;
+  margin-top: 1.5rem;
 }
 
-.code-keyword {
-  color: var(--primary-red);
-}
-
-.code-string {
-  color: #22C55E;
-}
-
-/* 数据展示区域 - 卡片式而非表格 */
-.data-showcase {
-  padding: 6rem 5%;
-}
-
-.data-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 3rem auto 0;
-}
-
-.data-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 2rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  transition: all 0.3s;
-}
-
-.data-card:hover {
-  border-color: var(--border-red);
-  background: var(--card-bg);
-}
-
-.data-icon {
-  width: 48px;
-  height: 48px;
-  background: rgba(220, 38, 38, 0.1);
-  border-radius: 10px;
+.cta-section {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: var(--primary-red);
-  font-size: 1.25rem;
-  flex-shrink: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  gap: 2rem;
 }
 
-.data-info h4 {
-  font-size: 1.125rem;
-  margin-bottom: 0.25rem;
-  font-weight: 600;
+.cta-section > div {
+  margin-bottom: 2rem;
 }
 
-.data-info .data-en {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.data-value {
-  margin-top: 0.5rem;
+.cta-subtitle {
+  display: block;
   font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-red);
+  font-weight: 300;
+  color: var(--text-secondary);
 }
 
-
-
-/* 响应式 */
 @media (max-width: 768px) {
-  .demo-container {
+  .grid-2,
+  .grid-3 {
     grid-template-columns: 1fr;
   }
-
-  .live-stats {
-    gap: 2rem;
+  
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
-}
-
-/* 动画 */
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-.live-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.live-indicator::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: #22C55E;
-  border-radius: 50%;
-  animation: pulse 2s infinite;
+  
+  .hero-right {
+    margin-top: 2rem;
+    text-align: left;
+  }
 }
 </style>

@@ -4,8 +4,8 @@ export default {
   },
   
   // 基础配置
-  title: '挨批IP查询',
-  description: 'Apipseach',
+  title: 'S3 For XunRuiCMS',
+  description: '极速对象存储融合',
   
   // 主题配置
   themeConfig: {
@@ -16,7 +16,6 @@ export default {
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/' },
-      //{ text: 'API文档', link: '/api/' },
       { 
         text: '更多', 
         items: [
@@ -50,13 +49,13 @@ export default {
     
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-repo/apipseach' }
+      { icon: 'github', link: 'https://github.com/your-repo/s3-xunruicms' }
     ],
     
     // 页脚
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present Apipseach'
+      message: '采用MIT/Apache开源协议',
+      copyright: 'Copyright © 2025 S3 For XunRuiCMS'
     }
   },
   
@@ -72,5 +71,11 @@ export default {
         }
       }
     }
-  }
+  },
+  
+  // 头部配置
+  head: [
+    // 国内主流CDN，协议MIT/Apache-2.0 (字节跳动/火山引擎)
+    ['link', { rel: 'stylesheet', href: 'https://unpkg.byted-static.com/font-awesome/6.0.0-beta3/css/all.min.css' }]
+  ]
 }
