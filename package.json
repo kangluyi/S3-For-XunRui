@@ -1,0 +1,22 @@
+{
+  "name": "s3-docs",
+  "version": "1.0.0",
+  "description": "s3 for XunRuiCMS 文档站点",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs && xcopy docs\\.vitepress\\dist\\* html\\* /E /Y",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "vitepress",
+    "docs",
+    "s3"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.59.0",
+    "vitepress": "^1.0.0"
+  }
+}
