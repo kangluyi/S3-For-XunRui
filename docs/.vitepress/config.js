@@ -56,6 +56,11 @@ export default {
       }
     ],
     
+    // 搜索配置
+    search: {
+      provider: 'local'
+    },
+    
     // 页脚
     footer: {
       message: '采用 Apache License 2.0 开源协议',
