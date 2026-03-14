@@ -54,8 +54,8 @@ export default {
     
     // 页脚
     footer: {
-      message: '采用MIT/Apache开源协议',
-      copyright: 'Copyright © 2025 S3 For XunRuiCMS'
+      message: '采用 Apache License 2.0 开源协议',
+      copyright: `Copyright © 2025 - ${new Date().getFullYear()} S3 For XunRuiCMS`
     }
   },
   

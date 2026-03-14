@@ -96,7 +96,7 @@
           </div>
           <p class="cms-description">原生字段集成，无需修改模板，后台直接选择S3桶。支持附件、图片、视频分发。</p>
           <div class="license-info">
-            <i class="fas fa-code-branch"></i> 开源协议: Apache 2.0 / MIT <br>
+            <i class="fas fa-code-branch"></i> 开源协议: Apache License 2.0 <br>
             <span class="en-micro">立即体验 · 完全免费</span>
           </div>
         </div>
@@ -107,13 +107,13 @@
     <hr>
     <div class="cta-section">
       <div>
-        <div class="en-dot">🚀 正式发布</div>
+        <div class="en-dot">🚀 正式发布</div><br>
         <span class="hero-title">S3 FOR XUNRUICMS</span>
         <span class="cta-subtitle">现已开放下载 · 生产就绪</span>
       </div>
-      <div class="release-tag">
+      <a href="https://www.xunruicms.com/shop/1783.html" class="release-tag" target="_blank">
         <i class="fas fa-download"></i> 立即获取
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -557,6 +557,28 @@ hr {
   color: var(--text-secondary);
 }
 
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: clamp(3rem, 12vw, 6rem);
+  }
+  
+  .home {
+    padding: 2rem 1.5rem 3rem;
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-2 {
+    gap: 2rem;
+  }
+  
+  .hero-stats {
+    gap: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .grid-2,
   .grid-3 {
@@ -571,6 +593,109 @@ hr {
   .hero-right {
     margin-top: 2rem;
     text-align: left;
+  }
+  
+  .home {
+    padding: 1.5rem 1rem 2rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+  
+  .feature-title {
+    font-size: 1.6rem;
+  }
+  
+  .card-modern {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contrast-group .big {
+    font-size: 3.5rem;
+  }
+  
+  .stat-big {
+    font-size: 2.5rem;
+  }
+  
+  .hero-stats {
+    gap: 2rem;
+  }
+  
+  .hero-extra-line {
+    padding: 1.5rem;
+  }
+  
+  .cms-name {
+    font-size: 2rem;
+  }
+  
+  .cta-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .release-tag {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 1rem 0.8rem 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+  
+  .feature-title {
+    font-size: 1.4rem;
+  }
+  
+  .card-modern {
+    padding: 1.5rem 1.2rem;
+    border-radius: 24px;
+  }
+  
+  .contrast-group .big {
+    font-size: 2.8rem;
+  }
+  
+  .stat-big {
+    font-size: 2rem;
+  }
+  
+  .hero-stats {
+    gap: 1.5rem;
+  }
+  
+  .hero-extra-line {
+    padding: 1.2rem;
+  }
+  
+  .cms-name {
+    font-size: 1.8rem;
+  }
+  
+  .compatibility-list li {
+    font-size: 0.9rem;
+  }
+  
+  .feature-desc {
+    font-size: 0.9rem;
+  }
+  
+  .red-trans-block {
+    border-radius: 40px 15px 15px 40px;
+  }
+  
+  .en-dot {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding-left: 0.8rem;
   }
 }
 </style>
