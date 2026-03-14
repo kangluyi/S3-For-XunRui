@@ -49,7 +49,8 @@ export default {
     
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-repo/s3-xunruicms' }
+      { icon: 'github', link: 'https://github.com/moruteaven/S3-For-XunRuiCMS' },
+      { icon: 'download', link: 'https://www.xunruicms.com/shop/1783.html' }
     ],
     
     // 页脚
