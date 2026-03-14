@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div class="card-modern">
+      <!--div class="card-modern">
         <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
         <div class="feature-title">性能可视化</div>
         <div class="feature-desc">内置实时监控面板，传输速率、请求次数、错误率一目了然。勾线风格图表实时反馈。</div>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <span class="en-micro chart-label">实时吞吐量 (MB/s)</span>
-      </div>
+      </div-->
       <div class="card-modern">
         <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
         <div class="feature-title">企业级安全</div>
@@ -81,8 +81,7 @@
       <div class="grid-2 compatibility-grid">
         <div class="card-modern">
           <ul class="compatibility-list">
-            <li><i class="fas fa-check-circle"></i> 阿里云OSS (北京/上海/深圳等)</li>
-            <li><i class="fas fa-check-circle"></i> 腾讯云COS (金融云/公有云)</li>
+            <li><i class="fas fa-check-circle"></i> 阿里云OSS、腾讯云COS</li>
             <li><i class="fas fa-check-circle"></i> 华为云OBS、百度云BOS</li>
             <li><i class="fas fa-check-circle"></i> MinIO / Ceph RADOS (自建私有云)</li>
             <li><i class="fas fa-check-circle"></i> 亚马逊S3、Backblaze B2</li>
@@ -92,7 +91,7 @@
         <div class="card-modern">
           <div class="cms-info">
             <span class="cms-name">XunRuiCMS</span>
-            <span class="cms-version">v6.x / v7.x 全系</span>
+            <span class="cms-version">V4.7.1及以上版本</span>
           </div>
           <p class="cms-description">原生字段集成，无需修改模板，后台直接选择S3桶。支持附件、图片、视频分发。</p>
           <div class="license-info">
