@@ -1,3 +1,5 @@
+import imageViewer from 'vitepress-plugin-image-viewer'
+
 export default {
   build: {
     outDir: '../../html'
@@ -88,5 +90,24 @@ export default {
     ['link', { rel: 'icon', href: '/logo.png' }],
     // 国内主流CDN，协议MIT/Apache-2.0 (字节跳动/火山引擎)
     ['link', { rel: 'stylesheet', href: 'https://cdn.chenyande.com/libs/font-awesome/4.7.0/css/font-awesome.css' }]
+  ],
+  
+  // 插件配置
+  plugins: [
+    imageViewer({
+      // 图片查看器配置
+      viewerOptions: {
+        toolbar: true,
+        tooltip: true,
+        movable: true,
+        zoomable: true,
+        rotatable: true,
+        scalable: true,
+        transition: true,
+        fullscreen: true,
+        keyboard: true,
+        url: 'src'
+      }
+    })
   ]
 }

@@ -14,9 +14,10 @@
     "s3"
   ],
   "author": "抹露茶柒",
-  "license": "MIT",
+  "license": "CC BY",
   "devDependencies": {
     "@rollup/rollup-win32-x64-msvc": "^4.59.0",
-    "vitepress": "^1.0.0"
+    "vitepress": "^1.0.0",
+    "vitepress-plugin-image-viewer": "^1.1.6"
   }
 }
