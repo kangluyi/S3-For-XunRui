@@ -63,7 +63,8 @@ export default {
     
     // 页脚
     footer: {
-      copyright: `Copyright © 2025 - ${new Date().getFullYear()} S3 For XunRuiCMS`
+      copyright: `Copyright © 2025 - ${new Date().getFullYear()} <a href="https://moruteaven.com" target="_blank" rel="noopener noreferrer">抹露茶柒</a>`,
+      message: '<a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">鲁ICP备2026008616号-2</a>'
     }
   },
   
