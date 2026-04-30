@@ -13,7 +13,7 @@
     "docs",
     "s3"
   ],
-  "author": "",
+  "author": "抹露茶柒",
   "license": "MIT",
   "devDependencies": {
     "@rollup/rollup-win32-x64-msvc": "^4.59.0",
