@@ -100,61 +100,70 @@
       <div class="section-header">
         <span class="section-tag">全生态兼容 · 即插即用</span>
       </div>
-      <div class="grid-2 compatibility-grid">
-        <div class="storage-cards-grid">
-          <div class="storage-card" style="--card-accent: #ff6a00;">
-            <div class="storage-icon"><i class="fas fa-cloud"></i></div>
-            <span>阿里云OSS</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #006eff;">
-            <div class="storage-icon"><i class="fas fa-cloud"></i></div>
-            <span>腾讯云COS</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #cf0a2c;">
-            <div class="storage-icon"><i class="fas fa-cloud"></i></div>
-            <span>华为云OBS</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #2932e1;">
-            <div class="storage-icon"><i class="fas fa-cloud"></i></div>
-            <span>百度云BOS</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #c72e49;">
-            <div class="storage-icon"><i class="fas fa-server"></i></div>
-            <span>MinIO</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #ef5c09;">
-            <div class="storage-icon"><i class="fas fa-database"></i></div>
-            <span>Ceph RADOS</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #ff9900;">
-            <div class="storage-icon"><i class="fab fa-aws"></i></div>
-            <span>亚马逊S3</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #e50914;">
-            <div class="storage-icon"><i class="fas fa-hard-drive"></i></div>
-            <span>Backblaze B2</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #07a5ec;">
-            <div class="storage-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-            <span>七牛云Kodo</span>
-          </div>
-          <div class="storage-card" style="--card-accent: #1e9fff;">
-            <div class="storage-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-            <span>又拍云</span>
-          </div>
+      <!-- 存储服务卡片 -->
+      <div class="storage-grid">
+        <div class="storage-card" style="--card-accent: #ff6a00;">
+          <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+          <span>阿里云OSS</span>
         </div>
-        <div class="card-modern cms-card">
-          <div class="cms-header">
-            <span class="cms-name">XunRuiCMS</span>
-            <span class="cms-version">V4.7.1及以上版本</span>
+        <div class="storage-card" style="--card-accent: #006eff;">
+          <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+          <span>腾讯云COS</span>
+        </div>
+        <div class="storage-card" style="--card-accent: #cf0a2c;">
+          <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+          <span>华为云OBS</span>
+        </div>
+        <div class="storage-card" style="--card-accent: #2932e1;">
+          <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+          <span>百度云BOS</span>
+        </div>
+        <div class="storage-card" style="--card-accent: #c72e49;">
+          <div class="storage-icon"><i class="fas fa-server"></i></div>
+          <span>MinIO</span>
+        </div>
+        <div class="storage-card" style="--card-accent: #ef5c09;">
+          <div class="storage-icon"><i class="fas fa-database"></i></div>
+          <span>Ceph RADOS</span>
+        </div>
+        <div class="storage-card" style="--card-accent: #ff9900;">
+          <div class="storage-icon"><i class="fab fa-aws"></i></div>
+          <span>亚马逊S3</span>
+        </div>
+        <div class="storage-card" style="--card-accent: #e50914;">
+          <div class="storage-icon"><i class="fas fa-hard-drive"></i></div>
+          <span>Backblaze B2</span>
+        </div>
+        <div class="storage-card" style="--card-accent: #07a5ec;">
+          <div class="storage-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <span>七牛云Kodo</span>
+        </div>
+        <div class="storage-card" style="--card-accent: #1e9fff;">
+          <div class="storage-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <span>又拍云</span>
+        </div>
+      </div>
+      <!-- CMS 集成横幅 -->
+      <div class="cms-banner">
+        <div class="cms-banner-content">
+          <div class="cms-banner-logo">
+            <img src="/logo.png" alt="XunRuiCMS" width="60" height="60">
           </div>
-          <p class="cms-desc">原生字段集成，无需修改模板，后台直接选择S3桶。支持附件、图片、视频分发。</p>
-          <div class="cms-footer">
+          <div class="cms-banner-text">
+            <div class="cms-banner-title">
+              <span class="cms-name">XunRuiCMS</span>
+              <span class="cms-version">V4.7.1及以上版本</span>
+            </div>
+            <p class="cms-banner-desc">原生字段集成，无需修改模板，后台直接选择S3桶。支持附件、图片、视频分发。</p>
+          </div>
+          <div class="cms-banner-actions">
             <div class="license-info">
               <i class="fas fa-code-branch"></i>
-              <span>开源协议: Apache License 2.0</span>
+              <span>Apache License 2.0</span>
             </div>
-            <span class="cta-hint">立即体验 · 完全免费</span>
+            <a href="https://www.xunruicms.com/shop/1783.html" class="cta-hint" target="_blank" rel="noopener noreferrer">
+              立即体验
+            </a>
           </div>
         </div>
       </div>
@@ -484,6 +493,25 @@ html:not(.dark) {
   margin-bottom: 5rem;
 }
 
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 0.75rem 1.25rem;
+  background: var(--card-bg);
+  border-radius: 30px;
+  border: 1px solid rgba(220, 89, 69, 0.15);
+}
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -627,34 +655,9 @@ html:not(.dark) {
   margin-bottom: 5rem;
 }
 
-.section-header {
-  margin-bottom: 2rem;
-}
-
-.section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  padding: 0.75rem 1.25rem;
-  background: var(--card-bg);
-  border-radius: 30px;
-  border: 1px solid rgba(220, 89, 69, 0.15);
-}
-
-.grid-2 {
+.storage-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-.storage-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
@@ -720,16 +723,46 @@ html:not(.dark) {
   background: color-mix(in srgb, var(--card-accent, var(--red-primary)) 25%, transparent);
 }
 
-.cms-card {
-  display: flex;
-  flex-direction: column;
+.cms-banner {
+  margin-top: 2rem;
 }
 
-.cms-header {
+.cms-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+  background: var(--card-bg);
+  border: 1px solid rgba(220, 89, 69, 0.2);
+  border-radius: 24px;
+  box-shadow: var(--card-shadow);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cms-banner-content:hover {
+  border-color: var(--red-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px -15px rgba(220, 89, 69, 0.25);
+}
+
+.cms-banner-logo {
+  flex-shrink: 0;
+}
+
+.cms-banner-logo img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(220, 89, 69, 0.2);
+}
+
+.cms-banner-text {
+  flex: 1;
+}
+
+.cms-banner-title {
   display: flex;
   align-items: baseline;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
@@ -748,21 +781,17 @@ html:not(.dark) {
   border-radius: 15px;
 }
 
-.cms-desc {
+.cms-banner-desc {
   color: var(--text-secondary);
   line-height: 1.7;
-  margin-bottom: 1.5rem;
-  flex-grow: 1;
+  margin: 0;
 }
 
-.cms-footer {
+.cms-banner-actions {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(220, 89, 69, 0.15);
+  align-items: flex-end;
 }
 
 .license-info {
@@ -781,6 +810,11 @@ html:not(.dark) {
   font-size: 0.85rem;
   color: var(--red-primary);
   font-weight: 600;
+  text-decoration: none;
+}
+
+.cta-hint:hover {
+  text-decoration: underline;
 }
 
 /* ========== CTA 区域 ========== */
@@ -791,7 +825,6 @@ html:not(.dark) {
   border-radius: 32px;
   border: 1px solid rgba(220, 89, 69, 0.15);
   overflow: hidden;
-  margin-top: 3rem;
 }
 
 .cta-content {
@@ -813,9 +846,9 @@ html:not(.dark) {
   font-weight: 800;
   color: var(--text-primary);
   margin: 1rem 0;
-  line-height: 1.2;        /* 新增：合理的行高 */
-  word-break: break-word;  /* 新增：允许单词换行 */
-  hyphens: auto;           /* 新增：启用连字符 */
+  line-height: 1.2;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .cta-subtitle {
@@ -898,6 +931,10 @@ html:not(.dark) {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .storage-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .hero-title {
     font-size: clamp(3rem, 11vw, 5.5rem);
   }
@@ -931,6 +968,20 @@ html:not(.dark) {
     gap: 2rem;
   }
 
+  .storage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cms-banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cms-banner-actions {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
   .cta-content {
     flex-direction: column;
     text-align: center;
@@ -946,10 +997,14 @@ html:not(.dark) {
     padding: 2rem 1rem 3rem;
   }
 
-  .grid-2,
   .grid-3 {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .storage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 
   .hero-title {
@@ -992,6 +1047,19 @@ html:not(.dark) {
     font-size: 1.5rem;
   }
 
+  .cms-banner-content {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .cms-banner-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cms-name {
+    font-size: 1.8rem;
+  }
+
   .cta-section {
     padding: 3rem 2rem;
   }
@@ -999,17 +1067,6 @@ html:not(.dark) {
   .release-btn {
     width: 100%;
     justify-content: center;
-  }
-
-  .cms-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .cms-footer {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 
@@ -1086,7 +1143,7 @@ html:not(.dark) {
     letter-spacing: 2px;
   }
 
-  .storage-cards-grid {
+  .storage-grid {
     grid-template-columns: 1fr;
     gap: 0.85rem;
   }
@@ -1107,8 +1164,23 @@ html:not(.dark) {
     font-size: 1rem;
   }
 
+  .cms-banner-content {
+    padding: 1.25rem 1.25rem;
+    gap: 1.5rem;
+  }
+
+  .cms-banner-logo img {
+    width: 45px;
+    height: 45px;
+  }
+
   .cms-name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  .cms-banner-actions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .cta-section {
