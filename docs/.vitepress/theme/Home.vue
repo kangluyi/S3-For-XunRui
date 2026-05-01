@@ -52,6 +52,9 @@
 
     <!-- 功能卡片区域 -->
     <section class="features-section" data-animate="stagger">
+      <div class="section-header">
+        <span class="section-tag">核心功能 · 强大可靠</span>
+      </div>
       <div class="grid-3">
         <div class="card-modern">
           <div class="card-icon">
@@ -98,28 +101,46 @@
         <span class="section-tag">全生态兼容 · 即插即用</span>
       </div>
       <div class="grid-2 compatibility-grid">
-        <div class="card-modern compatibility-card">
-          <div class="compatibility-list">
-            <div class="compat-item">
-              <i class="fas fa-check-circle"></i>
-              <span>阿里云OSS、腾讯云COS</span>
-            </div>
-            <div class="compat-item">
-              <i class="fas fa-check-circle"></i>
-              <span>华为云OBS、百度云BOS</span>
-            </div>
-            <div class="compat-item">
-              <i class="fas fa-check-circle"></i>
-              <span>MinIO / Ceph RADOS (自建私有云)</span>
-            </div>
-            <div class="compat-item">
-              <i class="fas fa-check-circle"></i>
-              <span>亚马逊S3、Backblaze B2</span>
-            </div>
-            <div class="compat-item">
-              <i class="fas fa-check-circle"></i>
-              <span>七牛云Kodo、又拍云</span>
-            </div>
+        <div class="storage-cards-grid">
+          <div class="storage-card" style="--card-accent: #ff6a00;">
+            <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+            <span>阿里云OSS</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #006eff;">
+            <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+            <span>腾讯云COS</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #cf0a2c;">
+            <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+            <span>华为云OBS</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #2932e1;">
+            <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+            <span>百度云BOS</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #c72e49;">
+            <div class="storage-icon"><i class="fas fa-server"></i></div>
+            <span>MinIO</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #ef5c09;">
+            <div class="storage-icon"><i class="fas fa-database"></i></div>
+            <span>Ceph RADOS</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #ff9900;">
+            <div class="storage-icon"><i class="fab fa-aws"></i></div>
+            <span>亚马逊S3</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #e50914;">
+            <div class="storage-icon"><i class="fas fa-hard-drive"></i></div>
+            <span>Backblaze B2</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #07a5ec;">
+            <div class="storage-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+            <span>七牛云Kodo</span>
+          </div>
+          <div class="storage-card" style="--card-accent: #1e9fff;">
+            <div class="storage-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+            <span>又拍云</span>
           </div>
         </div>
         <div class="card-modern cms-card">
@@ -631,32 +652,72 @@ html:not(.dark) {
   gap: 2rem;
 }
 
-.compatibility-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.storage-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 
-.compat-item {
+.storage-card {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-weight: 500;
+  min-height: 72px;
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid rgba(220, 89, 69, 0.15);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  font-weight: 600;
+  font-size: 0.95rem;
   color: var(--text-primary);
-  padding: 0.75rem 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.storage-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--card-accent, var(--red-primary));
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.storage-card:hover {
+  border-color: var(--card-accent, var(--red-primary));
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -12px color-mix(in srgb, var(--card-accent, var(--red-primary)) 35%, transparent);
+}
+
+.storage-card:hover::before {
+  transform: scaleY(1);
+}
+
+.storage-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
   border-radius: 12px;
+  background: color-mix(in srgb, var(--card-accent, var(--red-primary)) 15%, transparent);
+  flex-shrink: 0;
   transition: all 0.3s ease;
 }
 
-.compat-item:hover {
-  background: var(--red-light);
-  transform: translateX(8px);
+.storage-icon i {
+  color: var(--card-accent, var(--red-primary));
+  font-size: 1.2rem;
 }
 
-.compat-item i {
-  color: var(--red-primary);
-  font-size: 1.2rem;
-  width: 24px;
+.storage-card:hover .storage-icon {
+  transform: scale(1.1) rotate(-5deg);
+  background: color-mix(in srgb, var(--card-accent, var(--red-primary)) 25%, transparent);
 }
 
 .cms-card {
@@ -1025,9 +1086,25 @@ html:not(.dark) {
     letter-spacing: 2px;
   }
 
-  .compat-item {
+  .storage-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .storage-card {
+    min-height: 60px;
+    padding: 0.85rem 1rem;
     font-size: 0.9rem;
-    padding: 0.5rem 0.75rem;
+  }
+
+  .storage-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .storage-icon i {
+    font-size: 1rem;
   }
 
   .cms-name {
