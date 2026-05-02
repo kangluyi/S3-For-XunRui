@@ -103,43 +103,83 @@
       <!-- 存储服务卡片 -->
       <div class="storage-grid">
         <div class="storage-card" style="--card-accent: #ff6a00;">
-          <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
           <span>阿里云OSS</span>
         </div>
         <div class="storage-card" style="--card-accent: #006eff;">
-          <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+            </svg>
+          </div>
           <span>腾讯云COS</span>
         </div>
         <div class="storage-card" style="--card-accent: #cf0a2c;">
-          <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+            </svg>
+          </div>
           <span>华为云OBS</span>
         </div>
         <div class="storage-card" style="--card-accent: #2932e1;">
-          <div class="storage-icon"><i class="fas fa-cloud"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
           <span>百度云BOS</span>
         </div>
         <div class="storage-card" style="--card-accent: #c72e49;">
-          <div class="storage-icon"><i class="fas fa-server"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14H4v-2h7v2zm9-4H4v-2h16v2zm0-4H4V7h16v2z"/>
+            </svg>
+          </div>
           <span>MinIO</span>
         </div>
         <div class="storage-card" style="--card-accent: #ef5c09;">
-          <div class="storage-icon"><i class="fas fa-database"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h16c1.11 0 2-.9 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 16H4v-3h16v3zm0-4H4V8h16v8z"/>
+            </svg>
+          </div>
           <span>Ceph RADOS</span>
         </div>
         <div class="storage-card" style="--card-accent: #ff9900;">
-          <div class="storage-icon"><i class="fab fa-aws"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
           <span>亚马逊S3</span>
         </div>
         <div class="storage-card" style="--card-accent: #e50914;">
-          <div class="storage-icon"><i class="fas fa-hard-drive"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+            </svg>
+          </div>
           <span>Backblaze B2</span>
         </div>
         <div class="storage-card" style="--card-accent: #07a5ec;">
-          <div class="storage-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+            </svg>
+          </div>
           <span>七牛云Kodo</span>
         </div>
         <div class="storage-card" style="--card-accent: #1e9fff;">
-          <div class="storage-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <div class="storage-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+          </div>
           <span>又拍云</span>
         </div>
       </div>
