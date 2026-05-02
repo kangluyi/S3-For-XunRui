@@ -1,4 +1,4 @@
-# 腾讯云COS存储配置
+# 腾讯云 COS 
 
 - [官方网站](https://curl.qcloud.com/EUd4Xp2x)
 - [定价说明](https://curl.qcloud.com/6zXLdsJd)

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs && xcopy docs\\.vitepress\\dist\\* html\\* /E /Y",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "translate": "npx vitepress-auto-translate -s docs -l tzh en ja -m Qwen/Qwen3-8B -p siliconflow -r 3"
   },
   "keywords": [
     "vitepress",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@rollup/rollup-win32-x64-msvc": "^4.59.0",
     "vitepress": "^1.0.0",
+    "vitepress-auto-translate": "^1.0.3",
     "vitepress-plugin-image-viewer": "^1.1.6"
   }
 }
