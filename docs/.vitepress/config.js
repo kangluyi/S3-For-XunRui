@@ -1,15 +1,33 @@
-export default {
+// .vitepress/config.mts
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
+  // ========== 构建配置 ==========
   build: {
     outDir: '../../html'
   },
   
-  // 基础配置
-  title: 'S3 For XunRuiCMS',
-  description: '极速对象存储融合',
+  // ========== 站点基础配置 ==========
+  lang: 'zh-CN',                          // 网站语言
+  title: 'S3 For XunRuiCMS',              // 站点标题
+  titleTemplate: ':title - S3 For XunRuiCMS',  // 👈 将分隔符 | 改为 -
+  description: '极速对象存储融合',         // 站点描述
   
-  // 主题配置
+  // 是否显示最后更新时间（需要 Git 支持）
+  lastUpdated: true,
+  
+  // 清理 URL 中的 .html 后缀
+  cleanUrls: true,
+  
+  // Markdown 配置
+  markdown: {
+    lineNumbers: true,      // 代码块显示行号
+    theme: 'github-dark'    // 代码高亮主题
+  },
+  
+  // ========== 主题配置 ==========
   themeConfig: {
-    // 网站Logo
+    // 网站 Logo
     logo: '/logo.png',
     
     // 导航栏配置
@@ -20,7 +38,7 @@ export default {
         text: '更多', 
         items: [
           { text: '关于我们', link: '/about/' },
-          { text: '更新日志', link: '/changelog' }
+          //{ text: '更新日志', link: '/changelog' }
         ]
       }
     ],
@@ -31,7 +49,7 @@ export default {
         {
           text: '指南',
           items: [
-            { text: '开始', link: '/guide/' },
+            { text: '开始', link: '/guide/' }
           ]
         },
         {
@@ -39,7 +57,8 @@ export default {
           items: [
             { text: '介绍', link: '/guide/storage/' },
             { text: '阿里云 OSS', link: '/guide/storage/oss' },
-            { text: '腾讯云 COS', link: '/guide/storage/cos' }
+            { text: '腾讯云 COS', link: '/guide/storage/cos' },
+            { text: '七牛云 Kodo', link: '/guide/storage/kodo' }
           ]
         }
       ]
@@ -61,6 +80,57 @@ export default {
       provider: 'local'
     },
     
+    // ========== 界面文案本地化 ==========
+    // 大纲标题（On this page）
+    outline: {
+      label: '页面导航',
+      //level: [2, 3]  // 只显示 h2 和 h3 标题
+    },
+    
+    // 上一篇/下一篇文案
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+
+    keyboardNavigation: {
+      navigate: '导航',
+      select: '选择',
+      close: '关闭'
+    },
+
+    // 最后更新时间文案
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+    
+    // 导航栏/侧边栏相关
+    langMenuLabel: '多语言',
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    
+    // 编辑链接（可选，填上你的仓库地址即可启用）
+    // editLink: {
+    //   pattern: 'https://github.com/moruteaven/S3-For-XunRuiCMS/edit/main/docs/:path',
+    //   text: '在 GitHub 上编辑此页'
+    // },
+    
+    // 404 页面配置
+    notFound: {
+      code: '404',
+      title: '页面未找到',
+      quote: '您访问的页面不存在',
+      linkLabel: '返回首页',
+      linkText: '点击这里返回主页'
+    },
+    
     // 页脚
     footer: {
       copyright: `Copyright © 2025 - ${new Date().getFullYear()} <a href="https://moruteaven.com" target="_blank" rel="noopener noreferrer">抹露茶柒</a>`,
@@ -68,25 +138,22 @@ export default {
     }
   },
   
-  // 自定义主题颜色 - 红色主题
+  // ========== 深色模式 ==========
   appearance: true,  // 启用深色模式支持
   
-  // 自定义CSS变量
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@import "./.vitepress/theme/styles/vars.css";`
-        }
-      }
-    }
-  },
-  
-  // 头部配置
+  // ========== 头部标签 ==========
   head: [
     // 网站图标
     ['link', { rel: 'icon', href: '/logo.png' }],
-    // 国内主流CDN，协议MIT/Apache-2.0 (字节跳动/火山引擎)
+    // FontAwesome CDN
     ['link', { rel: 'stylesheet', href: 'https://cdn.chenyande.com/libs/font-awesome/4.7.0/css/font-awesome.css' }]
-  ]
-}
+  ],
+  
+  // ========== Vite 配置 ==========
+  // 注意：如果你使用 SCSS 变量，建议直接在 .vitepress/theme/index.js 中导入 CSS
+  // 而不是在这里配置 scss additionalData，因为 vars.css 不是 SCSS 文件
+  vite: {
+    // 如果你确实需要 SCSS 支持，可以保留，但建议移除或改用正确的方式
+    // 更推荐的做法：在 .vitepress/theme/index.js 中直接 import './theme/styles/vars.css'
+  }
+})
