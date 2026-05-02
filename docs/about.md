@@ -1,41 +1,54 @@
-# 关于
+# 关于 S3 For XunRuiCMS
 
-## 致谢与开源许可
+## 项目简介
 
-本文档站点由 [你的公司名称] 提供，文档内容版权归 [你的公司名称] 所有。
+S3 For XunRuiCMS 是为迅睿CMS系统提供 AWS S3 云存储支持的插件。
 
-本站点的构建离不开以下优秀的开源项目：
+## 功能特性
 
-### VitePress
+- 完整的文件上传/下载管理功能
+- 支持大文件分片上传和断点续传
+- 与迅睿CMS文件管理系统无缝集成
+- 完善的错误处理和日志记录
 
-**版本**: ^1.0.0  
-**用途**: 静态站点生成器，用于构建文档站点  
-**官网**: [https://vitepress.dev/](https://vitepress.dev/)  
-**许可证**: MIT License
+## 安装要求
 
-VitePress 是一个由 Vue 团队开发的静态站点生成器，基于 Vite 和 Vue 3 构建。它提供了快速的开发体验和优秀的文档编写功能。
+- PHP 7.4 或更高版本
+- 迅睿CMS 5.0+
 
-### vitepress-plugin-image-viewer
+## 安装方式
 
-**版本**: ^1.1.6  
-**用途**: 图片查看器插件，为文档中的图片提供查看功能  
-**官网**: [https://github.com/noonnightrocker/vitepress-plugin-image-viewer](https://github.com/noonnightrocker/vitepress-plugin-image-viewer)  
-**许可证**: MIT License
+通过迅睿CMS插件市场直接安装
 
-这是一个为 VitePress 设计的图片查看器插件，支持图片缩放、旋转、全屏查看等功能，提升了文档中图片的浏览体验。
+## 使用方法
 
-### 其他依赖
+1. 安装插件后，在迅睿CMS后台配置 AWS S3 相关信息
+2. 启用插件后，即可在迅睿CMS文件管理中使用 AWS S3 作为存储
 
-#### @rollup/rollup-win32-x64-msvc
+## 文档站点技术栈
 
-**版本**: ^4.59.0  
-**用途**: Rollup 打包工具的 Windows 平台特定版本  
-**许可证**: MIT License
+本文档站点基于以下技术构建：
 
-## 开源协议
+**VitePress** - 静态站点生成器，版本 ^1.0.0
+- 官网：https://vitepress.dev/
+- 许可证：MIT License
 
-本文档站采用 Apache License 2.0 开源协议，详情请查看项目根目录的 LICENSE 文件。
+**vitepress-plugin-image-viewer** - 图片查看器插件，版本 ^1.1.6
+- 官网：https://github.com/noonnightrocker/vitepress-plugin-image-viewer
+- 许可证：MIT License
 
 ## 致谢
 
-感谢以上开源项目的开发者们，他们的工作为本文档站的构建提供了重要支持。
+感谢 Vue.js、Vite、VitePress 等开源项目的贡献者。
+
+## 作者信息
+
+- 作者：陈延德
+- 邮箱：[me@chenyande.com](mailto:me@chenyande.com)
+- 站点：[chenyande.com](https://www.chenyande.com)
+
+## 许可证
+
+本项目采用 [Apache License 2.0](LICENSE) 授权
+
+Copyright © 2025 - 2026 陈延德. 保留所有权利
