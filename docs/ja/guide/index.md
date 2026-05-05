@@ -1,3 +1,4 @@
-# ガイド
+# -guideline-
 
-Apipseachへようこそ
+Apipseachを使用していただきありがとうございます。
+

@@ -1,4 +1,0 @@
-# Guide
-
-Welcome to Apispepace.
-
