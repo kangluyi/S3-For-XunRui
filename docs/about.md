@@ -49,6 +49,4 @@ S3 For XunRuiCMS 是为迅睿CMS系统提供 AWS S3 云存储支持的插件。
 
 ## 许可证
 
-本项目采用 [Apache License 2.0](LICENSE) 授权
-
-Copyright © 2025 - 2026 陈延德. 保留所有权利
+本项目采用 Apache License 2.0授权

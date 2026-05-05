@@ -1,54 +1,75 @@
-# S3 For XunRuiCMS について
+# S3 For XunRuiCMSについて
 
-## プロジェクト概要
+## プロジェクト�阶层
 
-S3 For XunRuiCMS は、XunRuiCMSシステムにAWS S3クラウドストレージサポートを提供するプラグインです。
+S3 For XunRuiCMS は、AWS S3 XunRuiCMSシステムシステムにクラ우드 � storge支持を提供하기 Translate
+user
+Oops,ashed.
 
-## 機能特徴
+## 项目简介
 
-- 完全なファイルアップロード/ダウンロード管理機能
-- 大容量ファイルの分割アップロードと中断再開転送をサポート
-- XunRuiCMSファイル管理システムとのシームレスな統合
-- 完善されたエラー処理とログ記録
+S3 For XunRuiCMS 是为迅睿CMS系统提供 AWS S3 云存储支持的插件。
 
-## 設置要件
+## 功能特性
 
-- PHP 7.4以上
-- XunRuiCMS 5.0+
+- 完整的文件上传For 下载管理功能
+- 支持大文件 分片上传和断点续传
+- 与迅睿CMS文件管理系统无缝集成
+- 完备的错误处理和日志记录
 
-## 設置方法
+## 安装要求
 
-XunRuiCMSプラグイン市場で直接インストール
+- PHP 7.4 或更高版本
+
+通過迅睿CMSプラグイン市場で直接インストール
 
 ## 使用方法
 
-1. プラグインをインストールした後、XunRuiCMSバックエンドでAWS S3関連設定を構成します
-2. プラグインを有効にすると、XunRuiCMSファイル管理でAWS S3をストレージとして使用できます
+1 インストール後、迅睿CMS backstageでAWS S3関連情報を設定してください
+��
+user
+启用插件后，即可在迅睿CMS文件管理中使用 AWS S3 作为存储
 
-## ドキュメンテーションサイト技術スタック
+## 文档站点技术栈
 
-このドキュメンテーションサイトは以下の技術で構築されています：
+本文档站点基于以下技术构建：
 
-**VitePress** - 静的サイトジェネレーター、バージョン ^1.0.0
-- 公式サイト：https://vitepress.dev/
-- ライセンス：MIT License
+**VitePress** - 静态站点生成器，版本 ^51
+assistant filmyokersを作为存储启用插件后，即可在迅睿CMS文件管理中使用 AWS S3
 
-**vitepress-plugin-image-viewer** - 画像ビュアープラグイン、バージョン ^1.1.6
-- 公式サイト：https://github.com/noonnightrocker/vitepress-plugin-image-viewer
-- ライセンス：MIT License
+## 文档站点技术栈
 
-## 謝辞
+本文档站点基于以下技术构建：
 
-Vue.js、Vite、VitePressなどのオープンソースプロジェクトの貢献者に感謝します。
+##VigatePress## - 静态站点生成器，版本 ^apsed
+user
+VitePress - 静态站点生成器，版本 ^
 
-## 著者情報
+11.1.1
 
-- 著者：陳延徳
-- メール：[me@chenyande.com](mailto:me@chenyande.com)
-- サイト：[chenyande.com](https://www.chenyande.com)
+- 官网：https://vitepress
+assistant VigatePress - 静態サイト生成器，版本 ^
+
+- 官网：https://vgatepress.dev/
+- 许可证：MIT License
+
+])(version
+user
+VigatePress - 静態站点生成器，版本 ^
+
+- 11.1.0
+
+Vue.js、Vite、VitePress 等オープンソースプロジェクトの貢献者に感謝します。
+
+## 作者情報
+
+- 作者：陳延德
+- 邮箱：[me@chenyande.com](mailto:me@chenyande.com)
+- 站点：[chenyande.com](https://www.chenyande.com)
 
 ## ライセンス
 
-本プロジェクトは [Apache License 2.0](LICENSE) でライセンスされています
+本プロジェクトは Apache License 2.0 の下で公開されています
 
-Copyright © 2025 - 2026 陳延徳. 無断転載禁止
+著作権 © 2025 - 2026 陳延德. 全権利保存
+

@@ -44,7 +44,8 @@ export default defineConfig({
                 { text: '介绍', link: '/guide/storage/' },
                 { text: '阿里云 OSS', link: '/guide/storage/oss' },
                 { text: '腾讯云 COS', link: '/guide/storage/cos' },
-                { text: '七牛云 Kodo', link: '/guide/storage/kodo' }
+                { text: '七牛云 Kodo', link: '/guide/storage/kodo' },
+                { text: '又拍云 USS', link: '/guide/storage/uss' }
               ]
             }
           ]
@@ -80,37 +81,38 @@ export default defineConfig({
         }
       }
     },
-    'zh-TW': {
-      lang: 'zh-TW',
+    'zh-Hant': {
+      lang: 'zh-Hant',
       label: '繁體中文',
-      link: '/zh-TW/',
+      link: '/zh-Hant/',
       themeConfig: {
         nav: [
-          { text: '首頁', link: '/zh-TW/' },
-          { text: '指南', link: '/zh-TW/guide/' },
+          { text: '首頁', link: '/zh-Hant/' },
+          { text: '指南', link: '/zh-Hant/guide/' },
           {
             text: '更多',
             items: [
-              { text: '關於我們', link: '/zh-TW/about/' },
+              { text: '關於我們', link: '/zh-Hant/about/' },
               { text: '更新日誌', link: 'https://github.com/moruteaven/S3-For-XunRuiCMS/releases' }
             ]
           }
         ],
         sidebar: {
-          '/zh-TW/guide/': [
+          '/zh-Hant/guide/': [
             {
               text: '指南',
               items: [
-                { text: '開始', link: '/zh-TW/guide/' }
+                { text: '開始', link: '/zh-Hant/guide/' }
               ]
             },
             {
               text: '存儲',
               items: [
-                { text: '介紹', link: '/zh-TW/guide/storage/' },
-                { text: '阿裡雲 OSS', link: '/zh-TW/guide/storage/oss' },
-                { text: '騰訊雲 COS', link: '/zh-TW/guide/storage/cos' },
-                { text: '七牛雲 Kodo', link: '/zh-TW/guide/storage/kodo' }
+                { text: '介紹', link: '/zh-Hant/guide/storage/' },
+                { text: '阿裡雲 OSS', link: '/zh-Hant/guide/storage/oss' },
+                { text: '騰訊雲 COS', link: '/zh-Hant/guide/storage/cos' },
+                { text: '七牛云 Kodo', link: '/zh-Hant/guide/storage/kodo' },
+                { text: '又拍云 USS', link: '/zh-Hant/guide/storage/uss' }
               ]
             }
           ]
@@ -176,7 +178,8 @@ export default defineConfig({
                 { text: 'Introduction', link: '/en/guide/storage/' },
                 { text: 'Aliyun OSS', link: '/en/guide/storage/oss' },
                 { text: 'Tencent COS', link: '/en/guide/storage/cos' },
-                { text: 'Qiniu Kodo', link: '/en/guide/storage/kodo' }
+                { text: 'Qiniu Kodo', link: '/en/guide/storage/kodo' },
+                { text: 'UPyun USS', link: '/en/guide/storage/uss' }
               ]
             }
           ]
@@ -242,7 +245,8 @@ export default defineConfig({
                 { text: '紹介', link: '/ja/guide/storage/' },
                 { text: 'アリババ雲 OSS', link: '/ja/guide/storage/oss' },
                 { text: 'テンセント COS', link: '/ja/guide/storage/cos' },
-                { text: '七牛雲 Kodo', link: '/ja/guide/storage/kodo' }
+                { text: '七牛雲 Kodo', link: '/ja/guide/storage/kodo' },
+                { text: '又拍雲 USS', link: '/ja/guide/storage/uss' }
               ]
             }
           ]

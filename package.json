@@ -7,7 +7,7 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs && xcopy docs\\.vitepress\\dist\\* html\\* /E /Y",
     "preview": "vitepress preview docs",
-    "translate": "npx vitepress-auto-translate -s docs -l tzh en ja -m Qwen/Qwen3-8B -p siliconflow -r 3"
+    "translate": "npx vitepress-auto-translate -s docs -l zh-Hant en ja -m Qwen/Qwen2.5-7B-Instruct -p siliconflow -r 3 -e '**/zh-Hant/**' '**/en/**' '**/ja/**'"
   },
   "keywords": [
     "vitepress",

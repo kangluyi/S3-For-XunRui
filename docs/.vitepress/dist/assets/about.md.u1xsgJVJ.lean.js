@@ -1,1 +1,0 @@
-import{_ as r,o as a,c as t,a2 as o}from"./chunks/framework.BFZItJIV.js";const g=JSON.parse('{"title":"关于","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),s={name:"about.md"};function i(n,e,l,p,h,u){return a(),t("div",null,[...e[0]||(e[0]=[o("",17)])])}const d=r(s,[["render",i]]);export{g as __pageData,d as default};
