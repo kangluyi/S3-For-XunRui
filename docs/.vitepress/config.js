@@ -2,22 +2,20 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  // ========== 构建配置 ==========
   build: {
     outDir: '../../html'
   },
 
-  // ========== 站点基础配置 ==========
   title: 'S3 For XunRuiCMS',
   titleTemplate: ':title - S3 For XunRuiCMS',
   description: '极速对象存储融合',
 
-  // 多语言配置
   locales: {
     root: {
       lang: 'zh-CN',
       label: '简体中文',
       link: '/',
+      srcDir: 'zh-CN',
       themeConfig: {
         nav: [
           { text: '首页', link: '/' },
