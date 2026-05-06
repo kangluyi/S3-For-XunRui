@@ -1,55 +1,60 @@
-# S3 For XunRuiCMS の概要
+# S3 For XunRuiCMSについて
 
-S3 XunRuiCMSシステムのためにAWS S3クラウドストレージにおけるサポートを提供するプラグインです。
+## プロジェクト概要
 
-- �嚇 ancestal ファイルの ます ば い で ぞ し の ま じ け の な い 並 び ば い ば し い
-- テ ブ 京 か ワ ピ �クリック し ま と っ て 大 と つ し る と こ る ゆ べ の 大 わ よ い て づ か り し る の の � forth に あ る る
-- そ ろ 込み く る し ず か る フ �OUCH 抖 ヨ シ シ ス ワ ジ に ノ ム ワ ペ ル イ に つ ま る わ り し い
-- � 敗 ち の む す る あ る に る し る つ も て の ロ ェ 佚 ロ に ま く る
+S3 For XunRuiCMSは、AWS S3 のクラou
+user
+# 关于 S3 For XunRuiCMS
+
+## 项目简介
+
+S XunRuiCMS系统提供 AWS S3 云存储支持的插件。
+
+## 功能特性
+
+- 完整的文件上传For下载管理功能
+- 支持大文件 For片上传和断 For续传
+- 与迅睿CMS文件管理系统无缝集成
+- 完善的错误处理和 日志记录
 
 ## 安装要求
 
-- PHP 7.4 またはそれ以上
+ - PHP 74 或更高版本
 
-- XunRuiCMS 5 5+. またはそれ以上
-
-通過迅睿CMSプラグイン市場で直接インストール
+迅睿CMSプラグイン市場からインストール
 
 ## 使用方法
 
-1. プラグインをインストール後、迅睿CMS backstageでAWS S3関連情報を設定します
-remarks:
-  - �这场里翻译为“迅睿CMS backstage”，"后台配置"通常会直译为"backstage"以保持专业术语的一致性
-System centerY
+1. プラグインをインストール後、迅睿CMS後台でAWS S3に関する情報を設定します。
+2. プラグイン有効後、迅睿CMSファイル管理でAWS S3を使用してストレージを行えます。
 
+## 文書サイトの技術スタック
 
- meilleurs traductions seraient :
+この文書サイトは次の技術で構築されています：
 
-*. プグネーションでプラグインをインストール後、迅睿CMS backstageでAWS S3配置相关信息を設定します
-"
+**VitePress** - スタティックサイトジェネレーター、バージョン ^1.0.0
 
-## 文档站点技术栈
+- 公式サイト：https://vitepress.dev/
+- ライセンス：MIT License
 
-本文档站点是基于以下技术构建的されたものです：
+**vitepress-plugin-image-viewer** - 画像ビューワー用プラグイン、バージョン ^1.1.6
 
-**VitePress** - 静态站点生成器，，版本 ^ˆ.1.5.5
+- 公式サイト：https://github.com/noonnightrocker/vitepress-plugin-image-viewer
+- ライセンス：MIT License
 
-- 官网：https://vitepress.dev/
-- 许可：MIT License
+## その他のお礼
 
-**vitepressPlugin-image-viewer** - 图片查看器插件，版本 ^ˆ.1.5.5
+Vue.js、Vite、VitePress などのオープンソースプロジェクトの contributers に感謝します。
 
-以下Vue.js、Vite、VitePressなどのオープンソースプロジェクトの貢献者に感謝します。
+## 作者情報
 
-## 著者情報
+- 作者：陈延德
+- 邮箱：[me@chenyande.com](mailto:me@chenyande.com)
+- 站点：[chenyande.com](https://www.chenyande.com)
 
-- �著者の名：陳延德
--- フォームメール：[me@chenyande.com](mailto:me@chenyande.com)
--- サイト：[chenyande.com](https://www.chenyande.com)
+## � Rajasthanicense
 
-## �ライセンス
-
-このプロジェクトはApache License 2.2の TERMSに従って提供されます。
+本プロジェクトは Apache License 2.0 の下で許可されます。
 
 
 

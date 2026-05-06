@@ -1,52 +1,52 @@
 # About S3 For XunRuiCMS
 
-## Project Introduction
+## Project Overview
 
-S S3 For XunRuiCMS is an插件 that provides the XunRuiCMS System AWS S3 cloud storage support.
+SS3 For XunRuiCMS is a plugin that provides XunRuiCMS System provides system AWS S3 cloud storage support the system.
 
-- Comprehensive file file 
-user
-## 安装要求
+## Features
 
-- PHP 7.4 或更高版本
+- Complete file/ downloading file management functions function  
+- Support for multipart upload and interrupt-al Continue upload  
+- Seamless integration integration with XunRuiCMS's file file file file management file management file
 
-- 迅睿CMS 5.4+
-
-以人民为
-assistant
 ## Installation Requirements
 
-- PHP 74 or or
+- PHP 7.4 or higher higher or more
 
-- XunRuiCMS For.4For
-------
+Install plugins directly from the迅睿CMS plugin market.
 
-Install plugins directly through XunRui CMS Plugin Marketplace
+## Usage
 
-## Usage Instructions
+1 After installing the plugin, configure the AWS S3 relevant information through the settings in the迅睿CMS admin interface interface.
 
-1 After installing the plugin, configure AWS S3 related information information information information information informationinformation information informationinformation about in XunRui CMS backend
- sito
-user
-通过迅睿CMS插件市场直接安装
+- After enabling the plugin, you can use AWS S3 as storage in the file manager of迅睿CMS
 
-## 使用方法
+## Documentation Site Technology Stack
 
-1 1安装插件后，迅睿CMS后台配置 AWS S3 相关信息
- 2 启用插件后，即可在迅睿CMS文件管理中使用 AWS S3 作为存储
+This documentation site was built on the following followingtechnology stack:
 
-## 文档站点技术栈
+### VitePress      
+- a static site generator. version ^1 version ^1..11. 
+- Official website: https://viteitepress.dev/
+- License: MIT License
 
-本文档站点基于以下技术构建：
+### vitepresspress-plugin-image-viewer    
+ an image viewer plugin on version ^ 
+- Official website: https://github.com/oonnightrocker/viteepress-plugin-image-viewer
+- License: MIT License
 
-##V##itePress## - 静态站点生成器，版本 ^##11.1.2
+## Acknowledgments
 
-- 官网：##httpshttps://viteite##ite.##com/#v##itenpress
-- 许##许##许可#### - ##MIT许可####证#
+- 官网：https://vitepress.dev/
+- 许可证：MIT License
 
-##v####iteiteimage-viewer####插## - 图片查看器插##，版本 ^####11.##6.#### 许##官网##：https#https://github.com/##noonnightrocker/v####image-viewer##看#### 许##许可##：MIT许可#
+**vitepress-plugin-image-viewer** - 图片查看器插件，版本 ^1.1.6
 
-## 致谢 ##
+- 官网：https://github.com/noonnightrocker/vitepress-plugin-image-viewer
+- 许可证：MIT License
+
+## 致谢
 
 Thank you to the contributors of Vue.js, Vite, VitePress, and other open-source projects.
 
@@ -54,7 +54,7 @@ Thank you to the contributors of Vue.js, Vite, VitePress, and other open-source 
 
 - Author: Chen Yande
 - Email: [me@chenyande.com](mailto:me@chenyande.com)
-- Site: [chenyande.com](https://www.chenyande.com)
+- Website: [chenyande.com](https://www.chenyande.com)
 
 ## License
 

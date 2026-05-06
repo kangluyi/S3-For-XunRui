@@ -1,9 +1,5 @@
 ---
-layout: home pesticidal
+layout: home
 ---
 
 <Home />
-
-
-
-

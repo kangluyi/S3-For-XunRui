@@ -1,12 +1,12 @@
-# 阿里雲 OSS
+# 阿裡雲 OSS
 
-## 設置資訊
-1. 至阿里雲創建一個儲存桶
+## �.preserveSpace 配置資訊
+1. 創建一個存儲桶於阿裡雲
 
-II. 將桶名稱填入`檯位`
-III. 在 在儲存桶概覽頁，找到“訪問端口”一欄，將「外網訪問 - Endpoint（區域節點）」複製到插件面板的`终点`。可 參考 [OSS區域與訪問域名](https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints)
-IV. `區域`參考 [OSS區域與訪問域名](https://help.aliyun.com/zh/oss/user-guide##regions-and-endpoints) 中的“區域ID”進行填寫
-V. `附件訪問URL` 載填「外網訪問 - 檭位域名」
+2. 將桶名稱填入`Bucket`
+3. 在瀏覽頁面中找到「訪問端口」一欄，將「外網訪問 - Endpoint（地域節點）」抄錄到插件面板的`Endpoint`。參考 [OSS地域和訪問域名](https://help.aliyun.com/zh/oss/user-guide^Regions-and-endpoints)
+4. `區域`請參考 [OSS地域和訪問域名](https://help.aliyun.com/zh/oss/user-guide^Regions-and-endpoints) 中的「區域ID」進行填寫
+5. `附件訪問URL` 填寫「外網訪問 - 桶域名」
 
-VI. 前往 [AccessKey](https://ram.console.aliyun.com/profile/access-keys) 複製 Access Key Id 和 AccessKey Secret ，並分別填入`存取金鑰`和`密鑰`
+6. 往 [AccessKey](https://ram.console.aliyun.com/profile/access-keys) 中複製 Access Key ID 和 Access Key Secret ，並分別填入`Access Key`和`SecretKey`
 

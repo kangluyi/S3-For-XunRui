@@ -6,6 +6,11 @@ export default defineConfig({
     outDir: '../../html'
   },
 
+  rewrites: {
+    'zh-CN/index.md': 'index.md',
+    'zh-CN/:path(.+)': ':path'
+  },
+
   title: 'S3 For XunRuiCMS',
   titleTemplate: ':title - S3 For XunRuiCMS',
   description: '极速对象存储融合',
