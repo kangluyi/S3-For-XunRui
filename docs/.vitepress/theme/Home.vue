@@ -9,7 +9,7 @@
           </div>
           <div class="tag-line">
             <span class="tag-dot"></span>
-            <span class="tag-text">原生 S3 集成</span>
+            <span class="tag-text">{{ t.tagLine }}</span>
           </div>
           <h1 class="hero-title">
             S3 <span>FOR XUNRUICMS</span>
@@ -17,12 +17,12 @@
           <div class="hero-stats">
             <div class="stat-item">
               <span class="stat-number">100%</span>
-              <span class="stat-label">兼容 S3 协议</span>
+              <span class="stat-label">{{ t.stats.s3Compat }}</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
               <span class="stat-number">∞</span>
-              <span class="stat-label">可扩展存储</span>
+              <span class="stat-label">{{ t.stats.scalable }}</span>
             </div>
           </div>
         </div>
@@ -40,11 +40,11 @@
         <div class="hero-stats-grid">
           <div class="stat-box">
             <span class="stat-big">99.9%</span>
-            <span class="stat-desc">可用性</span>
+            <span class="stat-desc">{{ t.statsGrid.availability }}</span>
           </div>
           <div class="stat-box">
             <span class="stat-big">&lt; 1ms</span>
-            <span class="stat-desc">插件处理延迟</span>
+            <span class="stat-desc">{{ t.statsGrid.latency }}</span>
           </div>
         </div>
       </div>
@@ -53,15 +53,15 @@
     <!-- 功能卡片区域 -->
     <section class="features-section" data-animate="stagger">
       <div class="section-header">
-        <span class="section-tag">核心功能 · 强大可靠</span>
+        <span class="section-tag">{{ t.featuresTag }}</span>
       </div>
       <div class="grid-3">
         <div class="card-modern">
           <div class="card-icon">
             <i class="fas fa-boxes"></i>
           </div>
-          <h3 class="card-title">原生S3兼容</h3>
-          <p class="card-desc">无缝对接阿里云、腾讯云、MinIO等主流对象存储，配置即用。同时支持Path-Style和Virtual-Hosted风格。</p>
+          <h3 class="card-title">{{ t.features[0].title }}</h3>
+          <p class="card-desc">{{ t.features[0].desc }}</p>
           <div class="card-footer">
             <span class="platform-tag aws-logo">AWS</span>
             <div class="mini-line-graphic">
@@ -74,22 +74,22 @@
           <div class="card-icon">
             <i class="fas fa-shield-alt"></i>
           </div>
-          <h3 class="card-title">企业级安全</h3>
-          <p class="card-desc">IAM 角色集成，临时凭证，签名v4 完全支持。传输中加密 + 静态加密，满足等保合规。</p>
+          <h3 class="card-title">{{ t.features[1].title }}</h3>
+          <p class="card-desc">{{ t.features[1].desc }}</p>
           <div class="card-footer security-footer">
             <span class="security-tag">AES-256</span>
-            <span class="security-label">加密标准</span>
+            <span class="security-label">{{ t.features[1].footer.label }}</span>
           </div>
         </div>
         <div class="card-modern">
           <div class="card-icon">
             <i class="fas fa-bolt"></i>
           </div>
-          <h3 class="card-title">开箱即用</h3>
-          <p class="card-desc">一键安装，零配置启动。XunRuiCMS V4.7.1+ 原生支持，无需修改模板。</p>
+          <h3 class="card-title">{{ t.features[2].title }}</h3>
+          <p class="card-desc">{{ t.features[2].desc }}</p>
           <div class="card-footer">
             <span class="version-tag">V4.7.1+</span>
-            <span class="free-tag">完全免费</span>
+            <span class="free-tag">{{ t.features[2].footer.label }}</span>
           </div>
         </div>
       </div>
@@ -98,89 +98,22 @@
     <!-- 兼容性与生态 -->
     <section class="compatibility-section" data-animate="fade-up">
       <div class="section-header">
-        <span class="section-tag">全生态兼容 · 即插即用</span>
+        <span class="section-tag">{{ t.compatTag }}</span>
       </div>
       <!-- 存储服务卡片 -->
       <div class="storage-grid">
-        <div class="storage-card" style="--card-accent: #ff6a00;">
+        <div 
+          v-for="(name, index) in t.storage" 
+          :key="index"
+          class="storage-card" 
+          :style="{ '--card-accent': storageColors[index] }"
+        >
           <div class="storage-icon">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
             </svg>
           </div>
-          <span>阿里云OSS</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #006eff;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
-            </svg>
-          </div>
-          <span>腾讯云COS</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #cf0a2c;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-            </svg>
-          </div>
-          <span>华为云OBS</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #2932e1;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-            </svg>
-          </div>
-          <span>百度云BOS</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #c72e49;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14H4v-2h7v2zm9-4H4v-2h16v2zm0-4H4V7h16v2z"/>
-            </svg>
-          </div>
-          <span>MinIO</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #ef5c09;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v12c0 1.1.89 2 2 2h16c1.11 0 2-.9 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 16H4v-3h16v3zm0-4H4V8h16v8z"/>
-            </svg>
-          </div>
-          <span>Ceph RADOS</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #ff9900;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-            </svg>
-          </div>
-          <span>亚马逊S3</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #e50914;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
-            </svg>
-          </div>
-          <span>Backblaze B2</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #07a5ec;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
-            </svg>
-          </div>
-          <span>七牛云Kodo</span>
-        </div>
-        <div class="storage-card" style="--card-accent: #1e9fff;">
-          <div class="storage-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-            </svg>
-          </div>
-          <span>又拍云</span>
+          <span>{{ name }}</span>
         </div>
       </div>
       <!-- CMS 集成横幅 -->
@@ -192,17 +125,17 @@
           <div class="cms-banner-text">
             <div class="cms-banner-title">
               <span class="cms-name">XunRuiCMS</span>
-              <span class="cms-version">V4.7.1及以上版本</span>
+              <span class="cms-version">{{ t.cms.version }}</span>
             </div>
-            <p class="cms-banner-desc">原生字段集成，无需修改模板，后台直接选择S3桶。支持附件、图片、视频分发。</p>
+            <p class="cms-banner-desc">{{ t.cms.desc }}</p>
           </div>
           <div class="cms-banner-actions">
             <div class="license-info">
               <i class="fas fa-code-branch"></i>
-              <span>Apache License 2.0</span>
+              <span>{{ t.license }}</span>
             </div>
             <a href="https://www.xunruicms.com/shop/1783.html" class="cta-hint" target="_blank" rel="noopener noreferrer">
-              立即体验
+              {{ t.cms.cta }}
             </a>
           </div>
         </div>
@@ -213,13 +146,13 @@
     <section class="cta-section" data-animate="fade-up">
       <div class="cta-content">
         <div class="cta-header">
-          <span class="section-tag">🚀 正式发布</span>
-          <h2 class="cta-title">S3 FOR XUNRUICMS</h2>
-          <p class="cta-subtitle">现已开放下载 · 生产就绪</p>
+          <span class="section-tag">{{ t.cta.tag }}</span>
+          <h2 class="cta-title">{{ t.cta.title }}</h2>
+          <p class="cta-subtitle">{{ t.cta.subtitle }}</p>
         </div>
         <a href="https://www.xunruicms.com/shop/1783.html" class="release-btn" target="_blank" rel="noopener noreferrer">
           <i class="fas fa-download"></i>
-          <span>立即获取</span>
+          <span>{{ t.cta.btn }}</span>
         </a>
       </div>
       <div class="cta-decoration">
@@ -233,10 +166,37 @@
 
 <script setup>
 // VitePress Home Component - S3 For XunRuiCMS
-import { onMounted } from 'vue'
+import { computed, ref, onMounted } from 'vue'
+import { useData } from 'vitepress'
+import { homeLocales, storageColors } from './i18n/home.js'
 
-// 入场动画
+const { frontmatter, page } = useData()
+
+const currentLang = computed(() => {
+  // 1. 首先看 frontmatter
+  if (frontmatter.value && frontmatter.value.lang) {
+    return frontmatter.value.lang
+  }
+  // 2. 其次看 relativePath
+  if (page.value && page.value.relativePath) {
+    const path = page.value.relativePath
+    if (path.startsWith('en/')) return 'en'
+    if (path.startsWith('ja/')) return 'ja'
+    if (path.startsWith('zh-Hant/')) return 'zh-Hant'
+  }
+  // 3. 默认中文
+  return 'zh-CN'
+})
+
+const t = computed(() => {
+  return homeLocales[currentLang.value] || homeLocales['zh-CN']
+})
+
 onMounted(() => {
+  // 浏览器端确保语言正确
+  // 不过现在已经用 computed 自动判断了，不需要额外赋值了！
+  
+  // 入场动画
   const animatedElements = document.querySelectorAll('[data-animate]')
 
   const observer = new IntersectionObserver((entries) => {
