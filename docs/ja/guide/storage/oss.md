@@ -1,12 +1,11 @@
 # 阿里雲 OSS
 
 ## 設定情報
-1. 阿リユンに移動してストレージバケツを作成します。
+1. 蘇州阿里巴巴雲服務创建一个穩定桶
 
-2. バケツ名を`バケツ`に記入します。
-3. ストレージバケツの概要ページで、“アクセスポート”の項目を見つけて、「公開アクセス - エンドポイント（地域節点）」をクライアントパネルの`エンドポイント`にコピーします。詳細は[OSS地域とアクセスドメイン](https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints)を参照してください。
-4. `リージョン`は[OSS地域とアクセスドメイン](https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints)の「リージョンID」に従って記入します。
-5. `添付ファイルアクセスURL`には「公開アクセス - バケツ名のドメイン」を記入します。
+3. 在穩定桶 概觀頁，找到「訪問端口」一欄，將「外網訪問 - �Endpoint（地域節點）」复制到插件面板的 `[照端寶_]`。请参考 [OSS地域和訪問域名](https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints)
+4. `[注域_]` 参考 [OSS地域和訪問域名](https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints) 中的“地域ID” 进行填写
+5. `[附件訪問URL_]` 填写「外網訪問 - �穩定桶_域名]」。`
 
-6. [AccessKey](https://ram.console.aliyun.com/profile/access-keys)に移動して、Access Key IDとAccess Key Secretをコピーし、それぞれ`アクセスキー`と`秘密キー`に記入します。
+6. 前往 [AccessssKey]([](https://ram.console.aliyun.com/profile/access-keys) 复制 Access Key ID 和 Access Key Scetret ，并分别填入 `[Access Key_]`和 `[SecretKey_]`
 

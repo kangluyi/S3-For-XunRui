@@ -14,6 +14,7 @@ export default defineConfig({
   title: 'S3 For XunRuiCMS',
   titleTemplate: ':title - S3 For XunRuiCMS',
   description: '极速对象存储融合',
+  lastUpdated: true,
 
   locales: {
     root: {
@@ -48,7 +49,8 @@ export default defineConfig({
                 { text: '阿里云 OSS', link: '/guide/storage/oss' },
                 { text: '腾讯云 COS', link: '/guide/storage/cos' },
                 { text: '七牛云 Kodo', link: '/guide/storage/kodo' },
-                { text: '又拍云 USS', link: '/guide/storage/uss' }
+                { text: '又拍云 USS', link: '/guide/storage/uss' },
+                { text: 'Cloudflare R2', link: '/guide/storage/r2'}
               ]
             }
           ]
@@ -64,7 +66,17 @@ export default defineConfig({
         ],
         outline: { label: '页面导航' },
         docFooter: { prev: '上一页', next: '下一页' },
-        lastUpdated: { text: '最后更新于', formatOptions: { dateStyle: 'short', timeStyle: 'medium' } },
+        lastUpdated: {
+          text: '最后更新于',
+          formatOptions: {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+          }
+        },
         langMenuLabel: '多语言',
         returnToTopLabel: '回到顶部',
         sidebarMenuLabel: '菜单',
@@ -131,7 +143,17 @@ export default defineConfig({
         ],
         outline: { label: '頁面導航' },
         docFooter: { prev: '上一頁', next: '下一頁' },
-        lastUpdated: { text: '最後更新於', formatOptions: { dateStyle: 'short', timeStyle: 'medium' } },
+        lastUpdated: {
+          text: '最後更新於',
+          formatOptions: {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+          }
+        },
         langMenuLabel: '多語言',
         returnToTopLabel: '回到頂部',
         sidebarMenuLabel: '選單',
@@ -198,7 +220,17 @@ export default defineConfig({
         ],
         outline: { label: 'On This Page' },
         docFooter: { prev: 'Previous Page', next: 'Next Page' },
-        lastUpdated: { text: 'Last Updated', formatOptions: { dateStyle: 'short', timeStyle: 'medium' } },
+        lastUpdated: {
+          text: 'Last Updated',
+          formatOptions: {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+          }
+        },
         langMenuLabel: 'Language',
         returnToTopLabel: 'Back to Top',
         sidebarMenuLabel: 'Menu',
@@ -265,7 +297,17 @@ export default defineConfig({
         ],
         outline: { label: 'ページ导航' },
         docFooter: { prev: '前のページ', next: '次のページ' },
-        lastUpdated: { text: '最終更新', formatOptions: { dateStyle: 'short', timeStyle: 'medium' } },
+        lastUpdated: {
+          text: '最終更新',
+          formatOptions: {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+          }
+        },
         langMenuLabel: '言語',
         returnToTopLabel: 'トップへ戻る',
         sidebarMenuLabel: 'メニュー',

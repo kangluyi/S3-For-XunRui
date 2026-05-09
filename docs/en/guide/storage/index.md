@@ -1,8 +1,8 @@
-Theoretically,, any storage that supports the S3 protocol can be used.
+理论上，支持 S3 协议的存储都可以使用哦~
 
-Do you currently have not any storage in use?
+Are you currently using any storage?
 
-[Click here to provide feedback](mailto:me@chenyande.com?subject=【S3-For-XunRuiCMS】Request for adding the storage manual&amp;body=I need)
+[Click here to give feedback](mailto:me@chenyande.com?subject=【S3--For-XunRuiCMS】Request to add S3 storage documentation guidance&amp;body=I need)
 
-I will carefully reply each and every email ( • ̀ω•́*)).
+I will reply to every email carefully ( • ̀ω•ˈ́*)).
 

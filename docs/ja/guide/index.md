@@ -1,5 +1,4 @@
-# ガ이ド
+# 手順
 
-Apipseadに入り-automatic翻译为：
-アピセアドによう godecrease_mark混入标记
+Apipseachを使用していただける cunt realizingです。
 

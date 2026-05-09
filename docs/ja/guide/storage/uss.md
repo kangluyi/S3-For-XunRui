@@ -1,12 +1,12 @@
-# Yetup Cloud USS
+# 又拍云 USS
 
-## 設置情報
-1. Yetup Cloud に登録 ([登録ページ](https://console.upyun.com/register/?invite=qjG-JJP1q)) してストレージボックスを作成してください
+## 設定情報
+1. 登録 [又拍云へ登録](https://console.upyun.com/register/?invite=qjG-JJP1q)し、ストレージボトルを1つ作成します
 
-2. ボックス名を`Bucket`に填入してください
-3. `Endpoint`は`"https://s3.api.upyun.com"`に填入してください
-4. `Region`は`"us-east-1"`に填入してください
-5. ストレージ管理——操作員委譲を下にスクロール —— S3 クレデンシャル![S3 クレデンシャル](./uss/1.png) に`AccessKey`と`SecretAccessKey`を填入してください
+2. ボトルの名前を`Bucket`に入力します
+3. `Endpoint`に`"https://s3.api.upyun.com"`を入力します
+4. `Region`に`"us-east-1"`を入力します
+5. ストレージ管理——操作員権限を下拉します——S3 凭证![S3 凭证](../../../zh-CN/guide/storage/uss/1.png)将`AccessKey`と`SecretAccessKey`を`Access Key`と`Secret Key`に入力します
 
 
 

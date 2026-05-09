@@ -1,6 +1,12 @@
 ---
 layout: home
-lang: ja
+lang: ja-JP
 ---
 
+
+
 <Home />
+
+
+
+

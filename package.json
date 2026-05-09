@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs && xcopy docs\\.vitepress\\dist\\* html\\* /E /Y",
+    "build": "vitepress build docs",
     "preview": "vitepress preview docs",
     "translate": "npx vitepress-auto-translate -s docs -l zh-Hant en ja -m Qwen/Qwen2.5-7B-Instruct -p siliconflow -r 3 -e '**/zh-Hant/**' '**/en/**' '**/ja/**'"
   },

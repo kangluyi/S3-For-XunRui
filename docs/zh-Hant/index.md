@@ -1,7 +1,10 @@
 ---
 layout: home
-lang: zh-Hant
+lang: zh-CN
 ---
+首頁
+
+
 
 <Home />
 

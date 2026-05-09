@@ -2,41 +2,51 @@
 
 ## Project Overview
 
-SS3 For XunRuiCMS is a plugin that provides XunRuiCMS System provides system AWS S3 cloud storage support the system.
+S the project overview,,
+user
+## 安装要求
 
-## Features
+- PHP 7.4 或更高版本
 
-- Complete file/ downloading file management functions function  
-- Support for multipart upload and interrupt-al Continue upload  
-- Seamless integration integration with XunRuiCMS's file file file file management file management file
+- 迅睿CMS 5.4+
+## 安装方式
 
+- 通过Composer安装:
+  1 composer require s3-for-xunrui
+- 将`sS3Manager`类文件放置到 `Application
+assistant
 ## Installation Requirements
 
-- PHP 7.4 or higher higher or more
+- PHP 7.4 or or or
+user
+- PHP  7.4 或更高版本
 
-Install plugins directly from the迅睿CMS plugin market.
+- 迅睿CMS  5.4+
+## 安装方式
+
+Install plugins directly from the SwiftCMS Plugin Market
 
 ## Usage
 
-1 After installing the plugin, configure the AWS S3 relevant information through the settings in the迅睿CMS admin interface interface.
-
-- After enabling the plugin, you can use AWS S3 as storage in the file manager of迅睿CMS
+1 After installing the plugin, configure the AWS S3 related information in the SwiftCMS admin panel.
+=-=-=-=-=-=-
+- After enabling the plugin, you can use the AWS S3 as storage in the SwiftCMS File Management.
 
 ## Documentation Site Technology Stack
 
-This documentation site was built on the following followingtechnology stack:
+This documentation site is built on the following the following following below - - the following the
 
-### VitePress      
-- a static site generator. version ^1 version ^1..11. 
-- Official website: https://viteitepress.dev/
-- License: MIT License
+**VitePress**** - - the - on the - `**- version ^1...on
 
-### vitepresspress-plugin-image-viewer    
- an image viewer plugin on version ^ 
-- Official website: https://github.com/oonnightrocker/viteepress-plugin-image-viewer
-- License: MIT License
+- - the o on the in the on the o[in the][1 the o[input on the o[in the][ on the o[in the]
 
-## Acknowledgments
+- o[Official Website][ on the o[MIT License]
+
+** the **Vite the p the ** - the on the
+
+on the o[ the o[Official Website][ on the o[MIT License]
+
+## Acknowledgements
 
 - 官网：https://vitepress.dev/
 - 许可证：MIT License
@@ -48,17 +58,20 @@ This documentation site was built on the following followingtechnology stack:
 
 ## 致谢
 
-Thank you to the contributors of Vue.js, Vite, VitePress, and other open-source projects.
+Thank the contributors to open
+user
 
-## Author Information
+感谢 Vue.js、Vite、VitePress 等开源项目的贡献者。
 
-- Author: Chen Yande
-- Email: [me@chenyande.com](mailto:me@chenyande.com)
-- Website: [chenyande.com](https://www.chenyande.com)
+## 作者信息
 
-## License
+- 作者：陈延德
+- 邮箱：[me@chenyande.com](mailto:me@chenyande.com)
+- 站点：[chenyande.com](https://www.chenyande.com)
 
-This project is licensed under the Apache License 2.0.
+## 许可证
+
+本项目采用 Apache License 2.0授权
 
 
 

@@ -1,6 +1,12 @@
 ---
 layout: home
-lang: en
+lang: en-US
 ---
 
+
+
 <Home />
+
+
+
+
