@@ -88,7 +88,7 @@
           <h3 class="card-title">{{ t.features[2].title }}</h3>
           <p class="card-desc">{{ t.features[2].desc }}</p>
           <div class="card-footer">
-            <span class="version-tag">V4.7.1+</span>
+            <span class="version-tag">{{ version }}+</span>
             <span class="free-tag">{{ t.features[2].footer.label }}</span>
           </div>
         </div>
@@ -168,7 +168,13 @@
 // VitePress Home Component - S3 For XunRuiCMS
 import { computed, ref, onMounted } from 'vue'
 import { useData } from 'vitepress'
+import { readFileSync } from 'fs'
+import { resolve, dirname } from 'path'
+import { fileURLToPath } from 'url'
 import { homeLocales, storageColors } from './i18n/home.js'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const pkg = JSON.parse(readFileSync(resolve(__dirname, '../../../package.json'), 'utf-8'))
 
 const { frontmatter, page } = useData()
 
@@ -187,6 +193,8 @@ const currentLang = computed(() => {
   // 3. 默认中文
   return 'zh-CN'
 })
+
+const version = computed(() => `V${pkg.version}`)
 
 const t = computed(() => {
   return homeLocales[currentLang.value] || homeLocales['zh-CN']
