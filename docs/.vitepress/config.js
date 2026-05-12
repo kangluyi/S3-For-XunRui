@@ -76,6 +76,10 @@ export default defineConfig({
     outDir: './dist'
   },
 
+  sitemap: {
+    hostname: 'https://s3.xunruicms.com'
+  },
+
   rewrites: {
     'zh-CN/index.md': 'index.md',
     'zh-CN/:path(.+)': ':path'
