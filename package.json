@@ -1,5 +1,5 @@
 {
-  "name": "s3-docs",
+  "name": "s3 for XunRuiCMS",
   "version": "1.0.0",
   "description": "s3 for XunRuiCMS 文档站点",
   "type": "module",
@@ -12,7 +12,8 @@
   "keywords": [
     "vitepress",
     "docs",
-    "s3"
+    "s3",
+    "xunruicms"
   ],
   "author": "抹露茶柒",
   "license": "CC BY",
